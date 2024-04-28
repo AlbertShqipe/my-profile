@@ -8,9 +8,42 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
 
   <body>
-    <%= yield %>
+
+    <div class="container">
+      <%= render partial:'layouts/shared/navbar' %>
+
+      <%= yield %>
+    </div>
+    <script>
+      function openNav() {
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if (screenWidth < 768) {
+          document.getElementById("mySidenav").style.width = "80%";
+          document.getElementById("main").style.marginLeft = "80%";
+        } else if (screenWidth < 576){
+          document.getElementById("mySidenav").style.width = "80%";
+          document.getElementById("main").style.marginLeft = "80%";
+        } else {
+        document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("main").style.marginLeft = "100%";
+        }
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+    </script>
   </body>
 </html>

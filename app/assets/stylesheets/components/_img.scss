@@ -1,0 +1,14 @@
+.img-container {
+  background-color:rgba(75, 75, 75, 0.1);
+}
+.img {
+  width: 250px;
+  height: 350px;
+  filter: grayscale(100%);
+  transition: filter 0.9s ease;
+  &:hover {
+    filter: grayscale(0%);
+    // width: 275px;
+    // height:375px;
+  }
+}

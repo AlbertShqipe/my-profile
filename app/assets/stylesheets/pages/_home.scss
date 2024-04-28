@@ -1,1 +1,58 @@
 // Specific CSS for your home-page
+hr {
+  color: rgb(172, 171, 166);
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+}
+body {
+  background-color:  rgb(0, 0, 0);
+}
+
+.background {
+  // background-image: url('https://images.unsplash.com/photo-1508778552286-12d4c6007799?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  width:100%;
+  // height: 200px;
+  color:white;
+  text-align: center;
+  box-shadow: inset 0 0 20px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+}
+
+.logo-box {
+  font-family: "Work Sans", Helvetica, "sans-serif";
+  top:-10px;
+  left:50px;
+  display: inline;
+  position: relative;
+  margin: auto;
+  color: rgb(172, 171, 166);
+  background-color: black;
+  z-index: 1;
+  .logo-content {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%; /* Position the top edge at the vertical center */
+    left: 50%; /* Position the left edge at the horizontal center */
+    transform: translate(-50%, -50%); /* Move the div back by half its own width and height */
+    .logo {
+      position: absolute;
+      font-size: 65px;
+      // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  }
+}
