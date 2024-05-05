@@ -15,3 +15,30 @@
 .navbar .navbar-brand img {
   width: 40px;
 }
+
+.link-container {
+  color: white;
+  margin: 0px 0px 0px 40%;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display:inline;
+
+      a {
+        text-decoration: none;
+        color: rgb(172, 171, 166);
+        margin-right: 16px;
+        font-family: "Work Sans", Helvetica, "sans-serif";
+        font-size: large;
+
+        &:hover {
+          color: rgb(224, 216, 175);
+        }
+      }
+    }
+  }
+}
