@@ -153,3 +153,185 @@ body {
     }
   }
 }
+
+.img-container {
+  position:relative;
+  background-color: rgb(172, 171, 166);
+}
+
+.first-row {
+  display: flex;
+  vertical-align: top;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+
+  .div1 {
+    width: 30%;
+    height: 250px;
+    background-image: url('img1.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    // margin: 3px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div2 {
+    width: 50%;
+    height: 200px;
+    background-image: url('img3.PNG');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    // margin: 3px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div3 {
+    width: 20%;
+    height: 200px;
+    background-image: url('img6.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    // margin: 3px;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+.second-row {
+  display: flex;
+  vertical-align: top;
+  justify-content: flex-start;
+  width:100%;
+  margin: auto;
+  overflow: auto;
+
+  .div1 {
+    width: 30%;
+    height: 200px;
+    background-image: url('img2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline;
+    // margin: 3px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div2 {
+    // width: 69%; this width will work if you are going to set a 5px margin /* Set width of the div */
+    width: 70%;
+    height: 250px; /* Set height of the div */
+    background-image: url('img5.jpg'); /* Set the URL of the image */
+    background-size: cover; /* Adjusts the size of the background image to cover the entire div */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat;
+    justify-self: end;
+    position: absolute;
+    // margin: 3px;
+    margin: 0;
+    // top: 205px; // in case you put a margin of 5px around the images this distance from the top wioll be the right one.
+    top: 200px;
+    right: 0;
+  }
+
+  .div3 {
+    width: 20%;
+    height: 200px;
+    background-image: url('img6.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    // margin: 3px;
+    margin: 0;
+    padding: 0;
+  }
+
+  // position: absolute;
+
+}
+
+.third-row {
+  display: flex;
+  vertical-align: top;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+
+  .div1 {
+    width: 25%;
+    height: 250px;
+    background-image: url('img1.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    // margin: 3px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div2 {
+    width: 25%;
+    height: 200px;
+    background-image: url('img3.PNG');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    // margin: 3px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div3 {
+    width: 25%;
+    height: 200px;
+    background-image: url('img6.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    // margin: 3px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div3 {
+    width: 25%;
+    height: 200px;
+    background-image: url('img6.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    // margin: 3px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div4 {
+    width: 25%;
+    height: 200px;
+    background-image: url('img9.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    // margin: 3px;
+    margin: 0;
+    padding: 0;
+  }
+
+}
