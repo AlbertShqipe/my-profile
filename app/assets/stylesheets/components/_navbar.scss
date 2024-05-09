@@ -2,23 +2,37 @@
   width: 100%;
   background-color: rgb(0, 0, 0);
   border-bottom: 1px solid rgb(172, 171, 166);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  padding: 0 0;
+  transition: opacity 0.5s ease-in-out 0s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 1;
+
+  p {
+    font-size: 20px;
+    color: white;
+    font-family: 'Europa', sans-serif;
+    margin-right: 200px;
+    margin-bottom: 0;
+    padding: 0;
+
+  }
 }
 
-.navbar .flex-item {
-  margin: 0 0%; /* Add margin to flex items */
-}
-
-.navbar .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar .navbar-brand img {
-  width: 40px;
+#main {
+  // transform: rotateY(180deg);
+  // transform: rotateX(180deg);
+  // padding: 0;
 }
 
 .link-container {
   color: white;
-  margin: 0px 0px 0px 40%;
+  margin: 0px 0px 0px 0px;
 
   ul {
     list-style-type: none;
@@ -26,14 +40,15 @@
     padding: 0;
 
     li {
-      display:inline;
+      display: inline;
+      margin: "0 3px";
 
       a {
         text-decoration: none;
         color: rgb(172, 171, 166);
-        margin-right: 16px;
+
         font-family: "Work Sans", Helvetica, "sans-serif";
-        font-size: large;
+        font-size: 12px;;
 
         &:hover {
           color: rgb(224, 216, 175);
