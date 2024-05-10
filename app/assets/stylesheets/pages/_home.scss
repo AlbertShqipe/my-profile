@@ -52,7 +52,7 @@ body {
   .div1 {
     width: 30%;
     height: 370px;
-    background-image: url('img1.png');
+    background-image: url('NNNN.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -236,12 +236,21 @@ body {
     text-decoration: none;
   }
 
+  button {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+
   .text {
     position: absolute;
     bottom: 100px;
     left: 150px;
     p {
       color: white;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+
     }
 
     h3 {
@@ -268,12 +277,19 @@ body {
     text-decoration: none;
   }
 
+  button {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
   .text {
     position: absolute;
     bottom: 80px;
     left: 230px;
     p {
       color: white;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
     }
 
     h3 {

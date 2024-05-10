@@ -1,0 +1,18 @@
+.video-container {
+  position: relative;
+  width: 30%;
+  height: 30vh; /* Adjust the height as needed */
+  overflow: hidden;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.video-container video {
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire container with the video */
+}
