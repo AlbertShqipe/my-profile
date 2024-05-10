@@ -43,27 +43,16 @@
       </div>
     </div>
   </div>
-      <p>ALBERTNIKOLLI</p>
+  <a style="text-decoration:none;"href="/"><p>ALBERTNIKOLLI</p></a>
   <div class="link-container">
     <ul>
-      <li><a href="">BIOGRAFIA</a></li>
+      <li><a href="/biography">BIOGRAFIA</a></li>
       <li><a href="">MEDIA</a></li>
       <li><a href="">CONTACTS</a></li>
-      <li><a href="">STOCAZZO</a></li>
+      <li>
+        <%= link_to "Play Sound", "#", id: "play-sound-link" %>
+        <%= link_to "Stop Sound", "#", id: "stop-sound-link", style: "display: none;" %>
+      </li>
     </ul>
-  </div>
-</div>
-<div class="logo-box">
-  <div class="logo-content-artistic">
-      <div class="logo-a">
-        A
-      </div>
-    <div class="logo-dark-spot"></div>
-    <div class="logo-slash">
-      |
-    </div>
-    <div class="logo-n">
-      N
-    </div>
   </div>
 </div>

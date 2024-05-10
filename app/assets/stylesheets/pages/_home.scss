@@ -35,130 +35,9 @@ body {
 
 }
 
-.logo-box {
-  font-family: "Work Sans", Helvetica, "sans-serif";
-  top:-10px;
-  left:50px;
-  display: inline;
-  position: relative;
-  margin: auto;
-  color: rgb(172, 171, 166);
-  background-color: black;
-  z-index: 101;
-
-  .logo-content-artistic {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 50%; /* Position the top edge at the vertical center */
-    left: 50%; /* Position the left edge at the horizontal center */
-    transform: translate(-50%, -50%); /* Move the div back by half its own width and height */
-    // transform: rotateY(180deg);
-
-    .logo-a {
-      position: absolute;
-      font-size: 65px;
-      // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      top: 20px;
-      left: 38px;
-      font-weight: 500;
-    }
-
-    .logo-dark-spot {
-      position:absolute;
-      font-size: 65px;
-      background-color: black;
-      width: 20px;
-      height: 44px;
-      left: 60.5px;
-      top: 58.5px;
-      transform: rotate(45deg);
-      z-index: 101;
-    }
-
-    .logo-slash {
-      position: absolute;
-      font-size: 65px;
-      top: 22px;
-      left: 60px;
-      transform: rotate(45deg);
-      z-index: 102;
-      font-size: 80px;
-    }
-
-    .logo-n {
-      position: absolute;
-      font-size: 65px;
-      top: 48px;
-      left: 58px;
-      font-weight: 500;
-    }
-  }
-}
-
-.logo-box-back {
-  font-family: "Work Sans", Helvetica, "sans-serif";
-  top:-85px;
-  left:-35px;
-  display: inline;
-  position: relative;
-  margin: auto;
-  color: rgb(172, 171, 166);
-  background-color: black;
-  z-index: 101;
-
-  .logo-content-artistic-back {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 50%; /* Position the top edge at the vertical center */
-    left: 50%; /* Position the left edge at the horizontal center */
-    transform: translate(-50%, -50%); /* Move the div back by half its own width and height */
-    transform: rotateY(180deg);
-
-    .logo-a-back {
-      position: absolute;
-      font-size: 65px;
-      // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      top: 20px;
-      left: 38px;
-      font-weight: 500;
-    }
-
-    .logo-dark-spot-back {
-      position:absolute;
-      font-size: 65px;
-      background-color: black;
-      width: 20px;
-      height: 44px;
-      left: 60.5px;
-      top: 58.5px;
-      transform: rotate(45deg);
-      z-index: 100;
-    }
-
-    .logo-slash-back {
-      position: absolute;
-      font-size: 65px;
-      top: 22px;
-      left: 60px;
-      transform: rotate(45deg);
-      z-index: 102;
-      font-size: 80px;
-    }
-
-    .logo-n-back {
-      position: absolute;
-      font-size: 65px;
-      top: 48px;
-      left: 58px;
-      font-weight: 500;
-    }
-  }
-}
 
 .img-container {
-  position:relative;
+  position: relative;
   background-color: rgb(172, 171, 166);
   width: 100% !important;
 }
@@ -245,7 +124,7 @@ body {
     // margin: 3px;
     margin: 0;
     // top: 205px; // in case you put a margin of 5px around the images this distance from the top wioll be the right one.
-    top: 200px;
+    top: 250px;
     right: 0;
   }
 
@@ -301,20 +180,7 @@ body {
 
   .div3 {
     width: 25%;
-    height: 200px;
-    background-image: url('img6.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    // margin: 3px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .div3 {
-    width: 25%;
-    height: 200px;
+    height: 250px;
     background-image: url('img6.jpg');
     background-size: cover;
     background-position: center center;
@@ -327,7 +193,20 @@ body {
 
   .div4 {
     width: 25%;
-    height: 200px;
+    height: 250px;
+    background-image: url('img6.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    // margin: 3px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div4 {
+    width: 25%;
+    height: 250px;
     background-image: url('img9.png');
     background-size: cover;
     background-position: center center;
@@ -338,4 +217,32 @@ body {
     padding: 0;
   }
 
+}
+
+.contanct {
+  width: 100%;
+  height:869px;
+  background-image: url('cunningham2024.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  // margin: 3px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+
+  .text {
+    position: absolute;
+    bottom: 100px;
+    left: 150px;
+    p {
+      color: white;
+    }
+
+    h3 {
+      color: white;
+    }
+  }
 }

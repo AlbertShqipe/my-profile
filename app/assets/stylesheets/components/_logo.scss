@@ -1,0 +1,123 @@
+.logo-box {
+  font-family: "Work Sans", Helvetica, "sans-serif";
+  top: 50px;
+  left:50px;
+  display: inline;
+  position: absolute;
+  margin: auto;
+  color: rgb(172, 171, 166);
+  background-color: black;
+  z-index: 101;
+  position: sticky;
+
+  .logo-content-artistic {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%; /* Position the top edge at the vertical center */
+    left: 50%; /* Position the left edge at the horizontal center */
+    transform: translate(-50%, -50%); /* Move the div back by half its own width and height */
+    // transform: rotateY(180deg);
+
+    .logo-a {
+      position: absolute;
+      font-size: 65px;
+      // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      top: 20px;
+      left: 38px;
+      font-weight: 500;
+    }
+
+    .logo-dark-spot {
+      position:absolute;
+      font-size: 65px;
+      background-color: black;
+      width: 20px;
+      border-radius: 10px;
+      height: 44px;
+      left: 60.5px;
+      top: 58.5px;
+      transform: rotate(45deg);
+      z-index: 101;
+    }
+
+    .logo-slash {
+      position: absolute;
+      font-size: 65px;
+      top: 22px;
+      left: 60px;
+      transform: rotate(45deg);
+      z-index: 102;
+      font-size: 80px;
+    }
+
+    .logo-n {
+      position: absolute;
+      font-size: 65px;
+      top: 48px;
+      left: 58px;
+      font-weight: 500;
+    }
+  }
+}
+
+.logo-box-back {
+  font-family: "Work Sans", Helvetica, "sans-serif";
+  top:-85px;
+  left:-35px;
+  display: inline;
+  position: relative;
+  margin: auto;
+  color: rgb(172, 171, 166);
+  background-color: black;
+  z-index: 101;
+
+  .logo-content-artistic-back {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%; /* Position the top edge at the vertical center */
+    left: 50%; /* Position the left edge at the horizontal center */
+    transform: translate(-50%, -50%); /* Move the div back by half its own width and height */
+    transform: rotateY(180deg);
+
+    .logo-a-back {
+      position: absolute;
+      font-size: 65px;
+      // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      top: 20px;
+      left: 38px;
+      font-weight: 500;
+    }
+
+    .logo-dark-spot-back {
+      position: absolute;
+      font-size: 65px;
+      background-color: black;
+      width: 20px;
+      height: 44px;
+      left: 60.5px;
+      top: 58.5px;
+      transform: rotate(45deg);
+      z-index: 100;
+    }
+
+    .logo-slash-back {
+      position: absolute;
+      font-size: 65px;
+      top: 22px;
+      left: 60px;
+      transform: rotate(45deg);
+      z-index: 102;
+      font-size: 80px;
+    }
+
+    .logo-n-back {
+      position: absolute;
+      font-size: 65px;
+      top: 48px;
+      left: 58px;
+      font-weight: 500;
+    }
+  }
+}
