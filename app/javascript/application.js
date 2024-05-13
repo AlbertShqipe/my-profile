@@ -24,3 +24,10 @@ document.addEventListener("DOMContentLoaded", function() {
     playSoundLink.style.display = "inline"; // Show the play sound link
   });
 });
+
+function scrollToElement(elementId) {
+  var element = document.getElementById(elementId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}

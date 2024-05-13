@@ -60,6 +60,7 @@ body {
     // margin: 3px;
     margin: 0;
     padding: 0;
+
   }
 
   .div2 {
@@ -181,7 +182,7 @@ body {
   .div3 {
     width: 25%;
     height: 250px;
-    background-image: url('img6.jpg');
+    background-image: url('BeachBirds.webp');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -293,6 +294,84 @@ body {
     }
 
     h3 {
+      color: white;
+    }
+  }
+}
+
+.maliphant {
+  width: 50%;
+  height: 769px;
+  background-image: url('criticalMass.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 150px;
+  position: relative;
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+  .text {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    p {
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+    }
+
+    h3 {
+      color: white;
+    }
+  }
+}
+
+.kylian {
+  width: 70%;
+  height: 769px;
+  background-image: url('img9.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  position: relative;
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+  .text {
+    position: absolute;
+    bottom: 30px;
+    right: 80px;
+    p {
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+    }
+
+    h3 {
+      text-align: right;
       color: white;
     }
   }

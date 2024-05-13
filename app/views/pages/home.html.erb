@@ -5,9 +5,9 @@
 </div> %>
 <div class="img-container">
   <div class="first-row">
-    <div class="div1 img"></div>
-    <div class="div2 img"></div>
-    <div class="div3 img"></div>
+    <div onclick="scrollToNNNN('forsythe')" class="div1 img"></div>
+    <div onclick="scrollToGD('G&D')" class="div2 img"></div>
+    <div onclick="scrollCriMas('maliphant')" class="div3 img"></div>
   </div>
   <div class="second-row">
     <div class="div1 img"></div>
@@ -17,11 +17,11 @@
 <div class="third-row">
   <div class="div1 img"></div>
   <div class="div2 img"></div>
-  <div class="div3 img"></div>
+  <div onclick="scrollToCunningham('cunningham')" class="div3 img"></div>
   <div class="div4 img"></div>
 </div>
 <%# <hr>  %> <!--Take off this comment in case you'd like to take off the 1px border -->
-<div class="cunningham">
+<div id="cunningham"class="cunningham">
   <div class="text">
     <p>“FALLING IS ONE OF THE WAYS OF MOVING“</p>
     <a href="https://www.mercecunningham.org/about/merce-cunningham/">
@@ -30,7 +30,7 @@
   </div>
   <button class="copyright" title="©Agathe Poupeney">C</button>
 </div>
-<div class="forsythe">
+<div class="forsythe" id="forsythe">
   <div class="text">
     <p>“NO ONE HAS ANY IDEA WHAT REALLY WORKS”</p>
     <a href="https://www.williamforsythe.com">
@@ -40,6 +40,28 @@
   <button class="copyright" title="©Agathe Poupeney">C</button>
 </div>
 
+<div class="maliphant" id="maliphant">
+  <div class="text">
+    <p>CRITICAL MASS</p>
+    <a href="https://www.russellmaliphantdancecompany.com/">
+      <h3>Russell Maliphant</h3>
+    </a>
+  </div>
+  <button class="copyright" title="©Blandine Soulage">C</button>
+</div>
+
+<div class="kylian" id="kylian">
+  <div class="text">
+    <p>“THE CHANGING OF A PERSON INTO A DANCER IS THE MOST BEAUTIFUL THING.”</p>
+    <a href="http://www.jirikylian.com/">
+      <h3>Jiří Kylián</h3>
+    </a>
+  </div>
+  <button class="copyright" title="©Blandine Soulage">C</button>
+</div>
+
+
+
 <div style="width:300px;margin:0;margin:auto ">
   <audio controls
     style="opacity:0" id="hidden-audio">
@@ -47,3 +69,28 @@
     Your browser does not support the audio element.
   </audio>
 </div>
+
+
+
+<script>
+  function scrollToNNNN(elementId) {
+    var element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  function scrollToCunningham(elementId) {
+    var element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  function scrollCriMas(elementId) {
+    var element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
