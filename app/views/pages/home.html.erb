@@ -16,7 +16,7 @@
 </div>
 <div class="third-row">
   <div class="div1 img"></div>
-  <div class="div2 img"></div>
+  <div onclick="scrollKylian('kylian')" class="div2 img"></div>
   <div onclick="scrollToCunningham('cunningham')" class="div3 img"></div>
   <div class="div4 img"></div>
 </div>
@@ -88,6 +88,13 @@
   }
 
   function scrollCriMas(elementId) {
+    var element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  function scrollKylian(elementId) {
     var element = document.getElementById(elementId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
