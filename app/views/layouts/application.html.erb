@@ -19,26 +19,8 @@
   </head>
 
   <body>
-
-    <div class="container">
-    </div>
-    <div class="logo-box">
-    <div class="logo-content-artistic">
-        <div class="logo-a">
-          A
-        </div>
-      <div class="logo-dark-spot"></div>
-      <div class="logo-slash">
-        |
-      </div>
-      <div class="logo-n">
-        N
-      </div>
-    </div>
-  </div>
-      <%= render partial:'layouts/shared/navbar' %>
-
-      <%= yield %>
+    <%= render partial:'layouts/shared/navbar' %>
+    <%= yield %>
     <script>
       function openNav() {
         var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;

@@ -1,4 +1,18 @@
 <div class="navbar">
+  <div class="logo-box">
+      <div class="logo-content-artistic">
+          <div class="logo-a">
+            A
+          </div>
+        <div class="logo-dark-spot"></div>
+        <div class="logo-slash">
+          |
+        </div>
+        <div class="logo-n">
+          N
+        </div>
+      </div>
+    </div>
   <div class="svg item" id="main">
     <svg xmlns="http://www.w3.org/2000/svg" id="svg" data-name="Layer 1" width="41.3999" height="23.6001" viewBox="0 0 41.3999 23.6001" onclick="openNav()">
       <rect x="32.3999" y="21.6001" width="9" height="2"></rect>
@@ -6,14 +20,6 @@
       <rect width="41.3999" height="2"></rect>
     </svg>
     <div id="mySidenav" class="sidenav">
-      <header>Welcome</header>
-      <div class="video-container">
-        <video autoplay muted loop>
-          <source src="<%= asset_path('N-2.mp4') %>" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <!-- Your content goes here -->
-      </div>
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <%# <div class="container">
         <div style="color:rgb(172, 171, 166); text-align:center; margin-top:30px;">
@@ -36,12 +42,12 @@
       </div> %>
     </div>
   </div>
-  <a style="text-decoration:none;"href="/"><p>ALBERTNIKOLLI</p></a>
+  <a style="text-decoration:none;" href="/"><p>ALBERTNIKOLLI</p></a>
   <div class="link-container">
     <ul>
       <li><a href="/">HOME</a></li>
       <li><a href="/biography">BIOGRAPHY</a></li>
-      <li><a href="">MEDIA</a></li>
+      <li><a href="/media">MEDIA</a></li>
       <li><a href="">CONTACTS</a></li>
       <li>
         <%= link_to "Play Sound", "#", id: "play-sound-link" %>

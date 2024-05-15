@@ -1,14 +1,14 @@
 .logo-box {
   font-family: "Work Sans", Helvetica, "sans-serif";
-  top: 50px;
-  left:50px;
   display: inline;
+  position: sticky;
+  top: 40px;
+  left: 50px;
   position: absolute;
   margin: auto;
   color: rgb(172, 171, 166);
   background-color: black;
   z-index: 101;
-  position: sticky;
 
   .logo-content-artistic {
     width: 150px;

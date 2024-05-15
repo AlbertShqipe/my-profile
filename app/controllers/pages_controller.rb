@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def biography
   end
+
+  def media
+  end
 end
