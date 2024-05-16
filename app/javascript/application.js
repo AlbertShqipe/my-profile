@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-function scrollToElement(elementId) {
-  var element = document.getElementById(elementId);
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
+document.addEventListener("DOMContentLoaded", function scrollToElement(elementId) {
+    var element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
   }
-}
+});
