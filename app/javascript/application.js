@@ -8,6 +8,17 @@ document.addEventListener("DOMContentLoaded", function() {
   var hiddenAudio = document.getElementById("hidden-audio");
   var playSoundLink = document.getElementById("play-sound-link");
   var stopSoundLink = document.getElementById("stop-sound-link");
+  var logoBox = document.getElementById("logoBox");
+  // var turnLogoFront = docucument.querySelector('.logo-box-back');
+  logoBox.addEventListener("click", function turnLogo(params) {
+    if (logoBox.classList == "logo-box") {
+      turnLogoBack();
+      // console.log("The logo is front")
+    } else {
+      turnLogoFront();
+      // console.log("The logo is backwards")
+    };
+  });
 
   playSoundLink.addEventListener("click", function(event) {
     event.preventDefault(); // Prevent the default link behavior
@@ -23,6 +34,34 @@ document.addEventListener("DOMContentLoaded", function() {
     stopSoundLink.style.display = "none"; // Hide the stop sound link
     playSoundLink.style.display = "inline"; // Show the play sound link
   });
+
+  const turnLogoBack = () => {
+    const logoContentArtistic = document.querySelector('.logo-content-artistic');
+    const logoA = document.querySelector('.logo-a');
+    const logoDarkSpot = document.querySelector('.logo-dark-spot');
+    const logoSlash = document.querySelector('.logo-slash');
+    const logoN = document.querySelector('.logo-n');
+    logoBox.classList = "logo-box-back";
+    logoContentArtistic.classList = "logo-content-artistic-back";
+    logoA.classList = "logo-a-back";
+    logoDarkSpot.classList = "logo-dark-spot-back";
+    logoSlash.classList = "logo-slash-back";
+    logoN.classList = "logo-n-back";
+  }
+
+  const turnLogoFront = () => {
+    const logoContentArtisticBack = document.querySelector('.logo-content-artistic-back');
+    const logoABack = document.querySelector('.logo-a-back');
+    const logoDarkSpotBack = document.querySelector('.logo-dark-spot-back');
+    const logoSlashBack = document.querySelector('.logo-slash-back');
+    const logoNBack = document.querySelector('.logo-n-back');
+    logoBox.classList = "logo-box";
+    logoContentArtisticBack.classList = "logo-content-artistic";
+    logoABack.classList = "logo-a";
+    logoDarkSpotBack.classList = "logo-dark-spot";
+    logoSlashBack.classList = "logo-slash";
+    logoNBack.classList = "logo-n";
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function scrollToElement(elementId) {
