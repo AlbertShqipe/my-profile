@@ -5,20 +5,10 @@ import "@popperjs/core"
 import "bootstrap"
 
 document.addEventListener("DOMContentLoaded", function() {
+  // The code below is used to play the sound in the background
   var hiddenAudio = document.getElementById("hidden-audio");
   var playSoundLink = document.getElementById("play-sound-link");
   var stopSoundLink = document.getElementById("stop-sound-link");
-  var logoBox = document.getElementById("logoBox");
-  // var turnLogoFront = docucument.querySelector('.logo-box-back');
-  logoBox.addEventListener("click", function turnLogo(params) {
-    if (logoBox.classList == "logo-box") {
-      turnLogoBack();
-      // console.log("The logo is front")
-    } else {
-      turnLogoFront();
-      // console.log("The logo is backwards")
-    };
-  });
 
   playSoundLink.addEventListener("click", function(event) {
     event.preventDefault(); // Prevent the default link behavior
@@ -34,6 +24,22 @@ document.addEventListener("DOMContentLoaded", function() {
     stopSoundLink.style.display = "none"; // Hide the stop sound link
     playSoundLink.style.display = "inline"; // Show the play sound link
   });
+
+  // The code below is used to turn the logo 180 deg in the y axes
+  var logoBox = document.getElementById("logoBox");
+
+  logoBox.addEventListener("click", function turnLogo(params) {
+    if (logoBox.classList == "logo-box") {
+      // you should set the necessary code to reset the page here
+      turnLogoBack();
+      // console.log("The logo is front")
+    } else {
+      // you should set the necessary code to reset the page here
+      turnLogoFront();
+      // console.log("The logo is backwards")
+    };
+  });
+
 
   const turnLogoBack = () => {
     const logoContentArtistic = document.querySelector('.logo-content-artistic');
