@@ -1,0 +1,231 @@
+.first-section {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+
+  .trapezoid-container {
+    width: device-width;
+    display: flex;
+    height: 600px;
+    background-color:black;
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    .navbar-academic {
+      width: 100%;
+      background-color: transparent;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      position: absolute;
+      flex-direction: row-reverse;
+      top: 20px;
+      left: 0;
+      z-index: 100;
+      opacity: 1;
+      border-bottom: none;
+
+      .link-container-navbar-academic {
+        color: white;
+        padding: 0;
+        margin: 10px 0px 0px 0px;
+        position: absolute;
+        display: inline-block;
+
+
+        ul {
+          list-style-type: none;
+          margin-right: 100px;
+          padding: 0;
+
+          li {
+            display: inline;
+            margin: 0 20px;
+
+
+            a {
+              text-decoration: none;
+              color: rgb(255, 255, 255);
+              padding: 10px 16px;
+              font-family: "Montserrat", Helvetica, "sans-serif";
+              font-size: 20px;;
+
+              &:hover {
+                color: rgb(224, 216, 175);
+              }
+            }
+          }
+
+          .contact-a {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            padding: 10px 16px;
+            font-size: 20px;
+            border-radius: 20px;
+
+            &:hover {
+              background-color: black;
+              color: rgb(224, 216, 175);
+              border-bottom: 1px solid white;
+            }
+          }
+        }
+
+        // @media (max-width:570px) {
+        //   display: none;
+        // }
+      }
+    }
+
+    .trapezoid {
+      border-bottom: 600px solid rgb(229,229,229);
+      border-left: 0px solid transparent;
+      border-right: 100px solid transparent;
+      height: 0px;
+      width: 50%;
+
+      .logo-box-academic {
+        cursor: pointer;
+        font-family: "Work Sans", Helvetica, "sans-serif";
+        display: inline;
+        position: sticky;
+        top: 70px;
+        left: 14%;
+        position: absolute;
+        margin: auto;
+        color: rgb(0, 0, 0);
+        background-color: black;
+        z-index: 101;
+
+        .logo-content-artistic-academic {
+          width: 150px;
+          height: 150px;
+          position: absolute;
+          top: 50%; /* Position the top edge at the vertical center */
+          left: 50%; /* Position the left edge at the horizontal center */
+          transform: translate(-50%, -50%); /* Move the div back by half its own width and height */
+          // transform: rotateY(180deg);
+
+
+
+          .logo-a-academic {
+            position: absolute;
+            font-size: 65px;
+            // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            top: 20px;
+            left: 38px;
+            font-weight: 500;
+          }
+
+          .logo-dark-spot-academic {
+            position:absolute;
+            font-size: 65px;
+            background-color:rgb(229, 229, 229);
+            width: 20px;
+            border-radius: 10px;
+            height: 44px;
+            left: 60.5px;
+            top: 58.5px;
+            transform: rotate(45deg);
+            z-index: 101;
+          }
+
+          .logo-slash-academic {
+            position: absolute;
+            font-size: 65px;
+            top: 22px;
+            left: 60px;
+            transform: rotate(45deg);
+            z-index: 102;
+            font-size: 80px;
+          }
+
+          .logo-n-academic {
+            position: absolute;
+            font-size: 65px;
+            top: 48px;
+            left: 58px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .text-trapezoid {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        color: rgb(0, 0, 0);
+        font-family: "Raleway", Helvetica, "sans-serif";
+        margin-top: 100px;
+        // text-align: center;
+        h1 {
+          font-size: 40px;
+          font-family: "Raleway", Helvetica, "sans-serif";
+          margin: 0;
+          font-weight: 700;
+        }
+
+        p {
+          font-size: 30px;
+          font-family: "Raleway", Helvetica, "sans-serif";
+          font-weight: 400;
+        }
+
+        .profession {
+          font-size: 20px;
+          font-family: "Raleway", Helvetica, "sans-serif";
+          font-weight: 400;
+          color: darkgrey;
+        }
+
+        ul {
+          display: flex;
+          justify-content: space-between;
+          list-style-type:none;
+          margin-top: 100px;
+          padding: 0;
+
+          li {
+            padding: 5px;
+            box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+            background-color: #C4C4C4
+          }
+        }
+      }
+
+    }
+
+    img {
+      width: 80%;
+      height: 700px;
+      position: absolute;
+      bottom: -30px;
+      right: -70px;
+    }
+  }
+
+  .text-first-section {
+    color: white;
+    h1 {
+      font-size: 20px;
+      font-family: "Raleway", Helvetica, "sans-serif";
+      margin: 0;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 14px;
+      font-family: "Raleway", Helvetica, "sans-serif";
+      font-weight: 400;
+    }
+  }
+}
+
+.second-section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(229,229,229);
+
+}
