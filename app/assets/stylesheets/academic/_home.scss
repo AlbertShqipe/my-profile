@@ -334,3 +334,73 @@
     }
   }
 }
+
+.third-section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(229,229,229);
+  padding-top: 25px;
+
+  .text-third-section {
+    color: black;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+    .skills {
+      display: inline-block;
+      padding: 10px 18px;
+      text-align: center;
+      letter-spacing: 5px;
+      font-size: 30px;
+      font-family: "Raleway", Helvetica, "sans-serif";
+      font-weight: 400;
+      border: 4px solid black;
+    }
+
+    svg {
+      padding: 20px 20px 0px 20px;
+    }
+
+    h4 {
+      margin-top: 25px;
+      font-size: 20px;
+      font-family: "montserrat", Helvetica, "sans-serif";
+      margin-left: 0px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    h5 {
+      font-size: 16px;
+      font-family: "montserrat", Helvetica, "sans-serif";
+      margin: 0;
+      font-weight: 100;
+    }
+  }
+}
+
+.forth-section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(229,229,229);
+  padding-top: 25px;
+
+  .text-forth-section {
+    color: black;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+    .portfolio {
+      display: inline-block;
+      padding: 10px 18px;
+      text-align: center;
+      letter-spacing: 5px;
+      font-size: 30px;
+      font-family: "Raleway", Helvetica, "sans-serif";
+      font-weight: 400;
+      border: 4px solid black;
+    }
+  }
+}
