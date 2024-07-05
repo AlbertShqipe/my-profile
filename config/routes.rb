@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.
-  get "home" => "pages#home"
+
+  # The line blow is to set the video for the welcoming of the users
+  # get "home" => "pages#home"
   get "biography" => "pages#biography"
   get "media" => "pages#media"
   get "contacts" => "pages#contacts"

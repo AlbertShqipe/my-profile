@@ -1,10 +1,10 @@
 .first-section {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: black;
 
   .trapezoid-container {
-    width: device-width;
+    width: 100%;
     display: flex;
     height: 600px;
     background-color:black;
@@ -201,8 +201,8 @@
       width: 80%;
       height: 700px;
       position: absolute;
-      bottom: -30px;
-      right: -70px;
+      bottom: -50px;
+      right: 0px;
     }
   }
 
@@ -227,5 +227,109 @@
   width: 100%;
   height: 100vh;
   background-color: rgb(229,229,229);
+  padding-top: 25px;
 
+  .separator {
+    text-align: center;
+    margin: 50px 0px;
+  }
+
+  .text-second-section {
+    color: black;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+    .about-me {
+      display: inline-block;
+      padding: 8px 16px;
+      text-align: center;
+      font-size: 30px;
+      font-family: "Raleway", Helvetica, "sans-serif";
+      font-weight: 400;
+      border: 2px solid black;
+    }
+
+    .more-about-me {
+      margin-top: 50px;
+
+      a {
+        text-decoration: none;
+        color: black;
+        padding: 8px 16px;
+        font-size: 20px;
+        font-family: "Raleway", Helvetica, "sans-serif";
+        font-weight: 400;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+
+        &:hover {
+          border-left: none;
+          border-right: none;
+          border-top: 2px solid rgb(0, 0, 0);
+          border-bottom: 2px solid rgb(0, 0, 0);
+        }
+      }
+    }
+
+    h1 {
+      font-size: 20px;
+      font-family: "Raleway", Helvetica, "sans-serif";
+      margin: 0;
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: 25px;
+      font-size: 18px;
+      font-family: "Raleway", Helvetica, "sans-serif";
+      font-weight: 400;
+    }
+  }
+
+  .first-two {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    .testo1 {
+      position: relative;
+      width: 30%;
+
+      svg {
+        position: absolute;
+        bottom: 110px;
+        right: 430px;
+        z-index: 1;
+      }
+    }
+    .testo2 {
+      position: relative;
+      width: 30%;
+
+      svg {
+        position: absolute;
+        bottom: 110px;
+        right: 430px;
+        z-index: 1;
+      }
+    }
+  }
+  .third {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    .testo3 {
+      position: relative;
+      width: 30%;
+
+      svg {
+        position: absolute;
+        bottom: 110px;
+        right: 430px;
+        z-index: 1;
+      }
+    }
+  }
 }
