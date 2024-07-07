@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'contacts/new'
+  get 'contacts/create'
   root to: "academic#home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -11,6 +13,7 @@ Rails.application.routes.draw do
   get "media" => "pages#media"
   get "contacts" => "pages#contacts"
 
+  resources :contacts, only: [:new, :create]
   # Defines the root path route ("/")
   # root "posts#index"
 end
