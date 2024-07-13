@@ -6,24 +6,24 @@ import "bootstrap"
 
 document.addEventListener("DOMContentLoaded", function() {
   // The code below is used to play the sound in the background
-  var hiddenAudio = document.getElementById("hidden-audio");
-  var playSoundLink = document.getElementById("play-sound-link");
-  var stopSoundLink = document.getElementById("stop-sound-link");
+  // var hiddenAudio = document.getElementById("hidden-audio");
+  // var playSoundLink = document.getElementById("play-sound-link");
+  // var stopSoundLink = document.getElementById("stop-sound-link");
 
-  playSoundLink.addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent the default link behavior
-    hiddenAudio.play(); // Play the hidden audio
-    stopSoundLink.style.display = "inline"; // Show the stop sound link
-    playSoundLink.style.display = "none"; // Hide the play sound link
-  });
+  // playSoundLink.addEventListener("click", function(event) {
+  //   event.preventDefault(); // Prevent the default link behavior
+  //   hiddenAudio.play(); // Play the hidden audio
+  //   stopSoundLink.style.display = "inline"; // Show the stop sound link
+  //   playSoundLink.style.display = "none"; // Hide the play sound link
+  // });
 
-  stopSoundLink.addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent the default link behavior
-    hiddenAudio.pause(); // Pause the hidden audio
-    hiddenAudio.currentTime = 0; // Rewind the audio to the beginning
-    stopSoundLink.style.display = "none"; // Hide the stop sound link
-    playSoundLink.style.display = "inline"; // Show the play sound link
-  });
+  // stopSoundLink.addEventListener("click", function(event) {
+  //   event.preventDefault(); // Prevent the default link behavior
+  //   hiddenAudio.pause(); // Pause the hidden audio
+  //   hiddenAudio.currentTime = 0; // Rewind the audio to the beginning
+  //   stopSoundLink.style.display = "none"; // Hide the stop sound link
+  //   playSoundLink.style.display = "inline"; // Show the play sound link
+  // });
 
   // The code below is used to turn the logo 180 deg in the y axes
   var logoBox = document.getElementById("logoBox");
