@@ -1494,11 +1494,11 @@
     <div class="text-forth-section">
       <h1 class="portfolio" >PORTFOLIO</h1>
     </div>
-    <div class="portfolio-container" data-controller="tabs" data-tabs-default-value="int">
+    <div class="portfolio-container" data-controller="tabs" data-tabs-default-value="rhegion">
       <div class="portfolio-tab-bar" style="overflow-x: scroll;">
         <ul>
-          <li data-tabs-target="link" data-action="click->tabs#open" data-id="int" class="active">InternationalDanceShow</li>
-          <li data-tabs-target="link" data-action="click->tabs#open" data-id="rhegion">Rhegion Caffe</li>
+          <li data-tabs-target="link" data-action="click->tabs#open" data-id="rhegion" class="active">Rhegion Caffe</li>
+          <li data-tabs-target="link" data-action="click->tabs#open" data-id="int" >InternationalDanceShow</li>
           <li data-tabs-target="link" data-action="click->tabs#open" data-id="co-en">Concours Entrelacé</li>
           <li data-tabs-target="link" data-action="click->tabs#open" data-id="jn">Julian Nicosia</li>
         </ul>
@@ -1513,7 +1513,7 @@
         <a href="https://www.concours-entrelace.com"><%= image_tag 'co-en.png', width:"70%" %></a>
       </div>
       <div class="portfolio-content hidden" data-tabs-target="tab" data-tabs-type-value="jn" data-id="jn">
-        <a href=""><%= image_tag 'jn.jpg', width:"70%" %></a>
+        <a href="https://jnw-57183cb0f38e.herokuapp.com/"><%= image_tag 'jn.jpg', width:"70%" %></a>
       </div>
       <%# <div class="portfolio-content hidden" data-tabs-target="tab" data-tabs-type-value="mobileDevelopment" data-id="mobileDevelopment">
         Hello world, hope you are well
