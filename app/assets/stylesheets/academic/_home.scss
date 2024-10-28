@@ -907,7 +907,7 @@
         background-color: rgb(0, 0, 0);
         box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
         padding: 10px;
-        margin: 0px;
+        margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -918,9 +918,12 @@
           margin: 0;
           padding: 0;
           display: flex;
-          // justify-content: space-around;
           list-style-type: none;
           color: #7C7C7C;
+          @media (min-width: 760px) {
+            justify-content: center;
+
+          }
 
           li {
             font-family: "Raleway", Helvetica, "sans-serif";
