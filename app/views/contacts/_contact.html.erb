@@ -1,18 +1,17 @@
-<%= form_with model: @contact, url: contacts_path, local: true do |form| %>
+<%= form_with url: contact_path, method: :post, local: true do |f| %>
   <div class="inp">
-    <%= form.text_field :name, required: true, placeholder: "Enter your name*" %>
+    <%= f.text_field :name, required: true, placeholder: "Enter your name*" %>
   </div>
 
   <div class="inp">
-
-    <%= form.email_field :email, required: true, placeholder: "Enter your email*" %>
+    <%= f.email_field :email, required: true, placeholder: "Enter your email*" %>
   </div>
 
   <div class="inp">
-    <%= form.text_area :message, required: true, placeholder: "Enter your message*" %>
+    <%= f.text_area :message, required: true, placeholder: "Enter your message*" %>
   </div>
 
   <div class="inp-btn">
-    <%= form.submit "Submit" %>
+    <%= f.submit "Send Message" %>
   </div>
 <% end %>
