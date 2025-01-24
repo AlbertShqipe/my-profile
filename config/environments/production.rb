@@ -2,6 +2,18 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  config.action_mailer.delivery_method = :smtp
+
+  # Maindrill configuration
+  config.action_mailer.default_url_options = { host: 'www.albertnikolli.com' }
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.mandrillapp.com',
+    port: 587,
+    user_name: 'AlbertNikolliWeb', # Replace with your Mandrill username
+    password: ENV['MAILCHIMP_API_TOKEN'], # Replace with your Mandrill API key
+    authentication: 'plain',
+    enable_starttls_auto: true
+  }
 
   # Code is not reloaded between requests.
   config.enable_reloading = false
