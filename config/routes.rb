@@ -4,11 +4,7 @@ Rails.application.routes.draw do
   root to: "academic#home"
   get "trial" => "academic#trial"
 
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
-  # Can be used by load balancers and uptime monitors to verify that the app is live.
-
+  post 'contacts', to: 'contacts#send_email', as: :contact
   # The line blow is to set the video for the welcoming of the users
   # get "home" => "pages#home"
   get "biography" => "pages#biography"
