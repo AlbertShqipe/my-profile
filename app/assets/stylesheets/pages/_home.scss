@@ -5,6 +5,7 @@ hr {
   padding: 0;
   opacity: 1;
 }
+
 body {
   background-color:  rgb(0, 0, 0);
   padding-top: 50px;
@@ -261,10 +262,10 @@ body {
 }
 
 .forsythe {
-  width: 50%;
-  height:869px;
+  width: 100%;
+  height: 100dvh;
   background-image: url('NNNN.webp');
-  // background-size: cover;
+  // background-size: ;
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
@@ -300,10 +301,10 @@ body {
 }
 
 .maliphant {
-  width: 50%;
-  height: 769px;
+  width: 100%;
+  height: 100dvh;
   background-image: url('criticalMass.webp');
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
@@ -339,10 +340,10 @@ body {
 }
 
 .kylian {
-  width: 70%;
-  height: 669px;
+  width: 100%;
+  height: 100dvh;
   background-image: url('img9.png');
-  background-size: cover;
+  background-size: 70% 70%;
   background-position: center center;
   background-repeat: no-repeat;
   display: block;

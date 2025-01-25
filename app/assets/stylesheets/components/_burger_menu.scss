@@ -1,0 +1,55 @@
+/* Burger menu */
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  z-index: 1010;
+  background-color: transparent transparent;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+
+  @media (max-width: 768px) {
+    // right: 20px;
+    // top: 25px;
+  }
+}
+
+.burger-menu {
+  .line {
+    width: 30px;
+    height: 2.5px;
+    background-color: rgba(172, 171, 166, 0.971);
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5); // Add this line for shadow
+
+  }
+  &:hover .line{
+    background-color: rgba(224, 216, 175, 0.971);
+  }
+}
+
+.burger-menu.active .top {
+  transform: rotate(-60deg) translate(-20px, 0px);
+  width: 40px;
+  height: 3px;
+  z-index: 10;
+}
+
+.burger-menu.active .middle {
+  // opacity: 0;
+  width: 25px;
+  height: 2px;
+  z-index: 10;
+  transform: translate(5px, 10px);
+}
+
+.burger-menu.active .bottom {
+  transform: rotate(60deg) translate(-4px, -10px);
+  width: 40px;
+  height: 3px;
+  z-index: 10;
+}

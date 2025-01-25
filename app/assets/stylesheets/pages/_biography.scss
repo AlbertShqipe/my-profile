@@ -1,0 +1,40 @@
+#about-me {
+  // padding: 50px;
+  color: rgb(172, 171, 166);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  width: 80%;
+
+  .image-container {
+    float: right;
+    margin: 0  0  0 1em;
+    max-width: 250px;
+    opacity: 0.8;
+    padding-top: 50px;
+    img {
+      box-shadow: 0 4px 8px rgba(255,255,255,0.2),0 6px 20px rgba(255,255,255,0.15);
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+#about-me h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#about-me p {
+  margin-bottom: 20px;
+}
+
+#about-me ul {
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+#about-me li {
+  margin-bottom: 10px;
+}

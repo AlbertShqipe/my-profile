@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   # get "home" => "pages#home"
   get "biography" => "pages#biography"
   get "media" => "pages#media"
-  get "contacts" => "pages#contacts"
 
   resources :contacts, only: [:new, :create]
   # Defines the root path route ("/")

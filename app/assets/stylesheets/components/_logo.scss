@@ -3,8 +3,8 @@
   font-family: "Work Sans", Helvetica, "sans-serif";
   display: inline;
   position: sticky;
-  top: 40px;
-  left: 50px;
+  top: 50px;
+  left: 90px;
   position: absolute;
   margin: auto;
   color: rgb(172, 171, 166);
@@ -68,7 +68,7 @@
   display: inline;
   position: sticky;
   top: -35px;
-  left: -35px;
+  left: 15px;
   position: absolute;
   margin: auto;
   color: rgb(172, 171, 166);
@@ -123,4 +123,20 @@
       font-weight: 500;
     }
   }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce {
+  animation: bounce 1s ease infinite;
 }

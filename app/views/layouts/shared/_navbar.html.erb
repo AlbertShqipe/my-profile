@@ -1,73 +1,45 @@
-<div class="navbar">
-  <div class="logo-box" id="logoBox">
-      <div class="logo-content-artistic">
-          <div class="logo-a">
-            A
-          </div>
-        <div class="logo-dark-spot"></div>
-        <div class="logo-slash">
-          |
+<div class="navbar" data-controller="burger-menu logo-bounce" >
+  <div class="logo-box" id="logoBoxArtistic">
+    <div class="logo-content-artistic">
+        <div class="logo-a">
+          A
         </div>
-        <div class="logo-n">
-          N
-        </div>
+      <div class="logo-dark-spot"></div>
+      <div class="logo-slash">
+        |
+      </div>
+      <div class="logo-n">
+        N
       </div>
     </div>
-    <div class="navbar-content">
-      <div class="link-container-navbar">
+  </div>
+  <div class="navbar-content">
+    <div class="link-container-navbar">
+      <ul>
+        <%# <li><a href="/">HOME</a></li> %>
+        <li><a href="/biography">BIOGRAPHY</a></li>
+        <li><a href="/media">MEDIA</a></li>
+        <li><a href="/#contactMe">CONTACTS</a></li>
+      </ul>
+    </div>
+
+    <div id="main">
+      <div class="burger-menu" id="burger-menu">
+        <div class="line top"></div>
+        <div class="line middle"></div>
+        <div class="line bottom"></div>
+      </div>
+      <div id="menu-container">
         <ul>
           <li><a href="/">HOME</a></li>
           <li><a href="/biography">BIOGRAPHY</a></li>
           <li><a href="/media">MEDIA</a></li>
           <li><a href="/contacts">CONTACTS</a></li>
-          <li>
-            <%= link_to "Play Sound", "#", id: "play-sound-link" %>
-            <%= link_to "Stop Sound", "#", id: "stop-sound-link", style: "display: none;" %>
-          </li>
         </ul>
+        <%# <%=image_tag 'N.png' %>
+        <%# <p>This page is being constructed, so please be patient until the magic is released!</p> %>
       </div>
-
-      <div class="svg item" id="main">
-        <svg xmlns="http://www.w3.org/2000/svg" id="svg" data-name="Layer 1" width="41.3999" height="23.6001" viewBox="0 0 41.3999 23.6001" onclick="openNav()">
-          <rect x="32.3999" y="21.6001" width="9" height="2"></rect>
-          <rect x="21.6001" y="10.8003" width="19.7998" height="2"></rect>
-          <rect width="41.3999" height="2"></rect>
-        </svg>
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <%# <div class="container">
-
-            <div style="color:rgb(172, 171, 166); text-align:center; margin-top:30px;">
-
-              <p>The purpuse of this page is to share with everyone my work.</p>
-              <p>My passion involves the language of mouvement, any type of creation process
-                and the place that theaters hold in our society .
-                <p>I was born in 1995 and started dancing at the age of eight, since then I never stopped practicing.</p>
-                <p>During the years, first as a student and later as a professional dancer/interpreter, I got the chance to
-                  work with some of the most
-                  iconic and renowned choreographers and artists of the contemporary scene.</p>
-                <p>This incredible travel gave me a lot of discipline and unforgettable experiences that I would like to
-                  share with you!</p>
-                <p>In this moment, while I am writing this paragraph using the Rails framework, I am a software engineer
-                  while being a
-                  professianl dancer at the Ballet of the National Opera of Lyon in France.</p>
-                <p>This website is my portfolio, including my artistical and academical work.</p>
-              <p>Please enjoy and for any cooperation don't hesitate to contact me.
-                You will find all the necessary information in the "contacts" section.</p>
-            </div>
-          </div> %>
-            <div class="sidenav-content">
-              <h1>Hello There, Welcome</h1>
-              <ul>
-                <li><a href="/">HOME</a></li>
-                <li><a href="/biography">BIOGRAPHY</a></li>
-                <li><a href="/media">MEDIA</a></li>
-                <li><a href="/contacts">CONTACTS</a></li>
-              </ul>
-              <p>This page is being constructed, so please be patient until the magic is released!</p>
-            </div>
-        </div>
-      </div>
-      <p><a style="text-decoration:none;" href="/">ALBERTNIKOLLI</a></p>
     </div>
+  </div>
+  <p>A L B E R T N I K O L L I</p>
 </div>
