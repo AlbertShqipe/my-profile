@@ -27,11 +27,14 @@ export default class extends Controller {
 
     const logo = document.getElementById("logoBox");
     const logoArtistic = document.getElementById("logoBoxArtistic");
+    const logoPhone = document.getElementById("logoBoxPhone");
 
     applyBounceEffect(logo);
     applyBounceEffect(logoArtistic);
+    applyBounceEffect(logoPhone);
 
     setupNavigation(logo, "/media");
     setupNavigation(logoArtistic, "/");
+    setupNavigation(logoPhone, "/media");
   }
 }
