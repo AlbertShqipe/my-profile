@@ -10,10 +10,10 @@
   <div style="font-size:20px; padding:20px;">
     <p>Hey Albert,</p>
     <p>Someone has contacted you through your website. Here are the details:</p>
-    <div style="text-indent: 20px;">
-      <p>Name: <br><span style="font-size:25px;"><%= @name %></span></p>
-      <p>Email: <br><span style="font-size:25px;"><a href="mailto:<%= @email %>" style="text-decoration:none"><%= @email %></a></span></p>
-      <p>Message: <br><span style="font-size:25px;"><%= @message %></span></p>
+    <div style="text-indent: 20px; font-size: 16px;">
+      <p>Name: <%= @name %></p>
+      <p>Email: <a href="mailto:<%= @email %>" style="text-decoration:none"><%= @email %></a></p>
+      <p>Message: <%= @message %></p>
     </div>
     <p style="font-size:32px">KEEP THE HARD WORK 👊🏻!</p>
   </div>
