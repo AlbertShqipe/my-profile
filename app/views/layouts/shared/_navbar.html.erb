@@ -13,32 +13,41 @@
       </div>
     </div>
   </div>
-  <div class="navbar-content">
-    <div class="link-container-navbar">
+  <div class="navbar-content" >
+    <!--
+    <div class="link-container-navbar" id="navbarContent">
       <ul>
         <%# <li><a href="/">HOME</a></li> %>
-        <li><a href="/biography">BIOGRAPHY</a></li>
-        <li><a href="/media">MEDIA</a></li>
+        <% if controller_name == "pages" && action_name == "biography" %>
+          <li><a href="/media">MEDIA</a></li>
+        <%else%>
+          <li><a href="/biography">BIOGRAPHY</a></li>
+        <% end %>
         <li><a href="/#contactMe">CONTACT</a></li>
       </ul>
     </div>
+    -->
 
     <div id="main">
-      <div class="burger-menu" id="burger-menu">
-        <div class="line top"></div>
-        <div class="line middle"></div>
-        <div class="line bottom"></div>
-      </div>
       <div id="menu-container" style="display: none;">
         <ul>
           <li><a href="/">HOME</a></li>
-          <li><a href="/biography">BIOGRAPHY</a></li>
-          <li><a href="/media">MEDIA</a></li>
+          <% if controller_name == "pages" && action_name == "biography" %>
+            <li><a href="/media">MEDIA</a></li>
+          <%else%>
+            <li><a href="/biography">BIOGRAPHY</a></li>
+          <% end %>
+          <%# <li><a href="/media">MEDIA</a></li> %>
         </ul>
         <%# <%=image_tag 'N.png' %>
         <%# <p>This page is being constructed, so please be patient until the magic is released!</p> %>
       </div>
     </div>
   </div>
-  <p>A L B E R T N I K O L L I</p>
+  <p id="albert">A L B E R T N I K O L L I</p>
+  <div class="burger-menu" id="burger-menu">
+    <div class="line top"></div>
+    <div class="line middle"></div>
+    <div class="line bottom"></div>
+  </div>
 </div>

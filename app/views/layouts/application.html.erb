@@ -25,6 +25,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
       }
     </style>
   </head>
@@ -32,6 +33,7 @@
   <body>
     <%= render partial:'layouts/shared/navbar' unless controller_name == "academic"%>
     <%= yield %>
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <script>
       function openNav() {
         var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;

@@ -3,8 +3,8 @@
   font-family: "Work Sans", Helvetica, "sans-serif";
   display: inline;
   position: sticky;
-  top: 50px;
-  left: 90px;
+  top: 70px;
+  left: 5%;
   position: absolute;
   margin: auto;
   color: rgb(172, 171, 166);
@@ -12,8 +12,8 @@
   z-index: 101;
 
   @media (max-width: 768px) {
-    top: 50px;
-    left: 50px;
+    top: 70px;
+    left: 14%;
 
   }
 

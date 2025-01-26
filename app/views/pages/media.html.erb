@@ -8,14 +8,26 @@
     <div class="div1 img"></div>
     <div class="div2 img"></div>
   </div>
+  <div class="third-row">
+    <div class="div1 img"></div>
+    <div onclick="scrollKylian('kylian')" class="div2 img"></div>
+    <div onclick="scrollToCunningham('cunningham')" class="div3 img"></div>
+    <div class="div4 img"></div>
+  </div>
 </div>
-<div class="third-row">
-  <div class="div1 img"></div>
-  <div onclick="scrollKylian('kylian')" class="div2 img"></div>
-  <div onclick="scrollToCunningham('cunningham')" class="div3 img"></div>
-  <div class="div4 img"></div>
+
+<%# <div class="image">
+</div> %>
+<div class="kylian" id="kylian">
+  <div class="text">
+    <p>“THE CHANGING OF A PERSON INTO A DANCER IS THE MOST BEAUTIFUL THING.”</p>
+    <a href="http://www.jirikylian.com/">
+      <h3>Jiří Kylián</h3>
+    </a>
+  </div>
+  <button class="copyright" title="©Blandine Soulage">C</button>
 </div>
-<%# <hr>  %> <!--Take off this comment in case you'd like to take off the 1px border -->
+<%# <hr>  <!--Take off this comment in case you'd like to take off the 1px border --> %>
 <div id="cunningham"class="cunningham">
   <div class="text">
     <p>“FALLING IS ONE OF THE WAYS OF MOVING“</p>
@@ -34,7 +46,6 @@
   </div>
   <button class="copyright" title="©Agathe Poupeney">C</button>
 </div>
-
 <div class="maliphant" id="maliphant">
   <div class="text">
     <p>CRITICAL MASS</p>
@@ -44,17 +55,23 @@
   </div>
   <button class="copyright" title="©Blandine Soulage">C</button>
 </div>
-
-<div class="kylian" id="kylian">
-  <div class="text">
-    <p>“THE CHANGING OF A PERSON INTO A DANCER IS THE MOST BEAUTIFUL THING.”</p>
-    <a href="http://www.jirikylian.com/">
-      <h3>Jiří Kylián</h3>
-    </a>
-  </div>
-  <button class="copyright" title="©Blandine Soulage">C</button>
+<div id="#t-g-d" class="video-background">
+  <iframe src="https://player.vimeo.com/video/1050511459?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp;quality=480p&amp;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="trimedGD"></iframe>
 </div>
-
+<div class="list">
+  <%= image_tag 'NNNN.webp' %>
+  <%= image_tag 'img9.png' %>
+  <%= image_tag 'img2c.png' %>
+  <%= image_tag 'img4.jpg' %>
+  <%= image_tag 'AM.JPG' %>
+  <%= image_tag 'img1.png' %>
+  <%= image_tag 'img5.jpg' %>
+  <%= image_tag 'CriticalMassLausanne.jpeg' %>
+  <%= image_tag 'BeachBirds.webp' %>
+  <%= image_tag 'img6.jpg' %>
+  <%= image_tag 'img3.PNG' %>
+  <%= image_tag 'img7.jpg' %>
+</div>
 
 
 <%# <div style="width:300px;margin:0;margin:auto "> %>
