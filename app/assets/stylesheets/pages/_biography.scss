@@ -9,13 +9,16 @@
   .image-container {
     float: right;
     margin: 0  0  0 1em;
-    max-width: 250px;
+
     opacity: 0.8;
     padding-top: 50px;
     img {
       box-shadow: 0 4px 8px rgba(255,255,255,0.2),0 6px 20px rgba(255,255,255,0.15);
       width: 100%;
       height: auto;
+    }
+    @media (max-width: 760px) {
+      max-width: 150px;
     }
   }
 }

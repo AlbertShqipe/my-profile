@@ -1,6 +1,7 @@
 .main-container {
   width: 100%;
   background-color: rgb(229, 229, 229);
+
   .first-section-pc {
     width: 100vw;
     height: 100vh;
@@ -307,7 +308,7 @@
 
       .sidenav-academic .closebtn {
         position: absolute;
-        top: 10px;
+        top: 0px;
         right: 13px;
         font-size: 50px;
         margin-left: 50px;

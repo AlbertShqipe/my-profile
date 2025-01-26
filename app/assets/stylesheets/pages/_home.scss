@@ -234,6 +234,10 @@ body {
   padding: 0;
   position: relative;
 
+  @media (max-width: 760px) {
+    background-size: contain;
+  }
+
   a {
     text-decoration: none;
   }
@@ -274,6 +278,10 @@ body {
   padding: 0;
   margin: auto;
   position: relative;
+
+  @media (max-width: 760px) {
+    background-size: contain;
+  }
 
   a {
     text-decoration: none;
@@ -351,6 +359,10 @@ body {
   padding: 0;
   margin: auto;
   position: relative;
+
+  @media (max-width: 760px) {
+    background-size: contain;
+  }
 
   a {
     text-decoration: none;
