@@ -1,16 +1,22 @@
 #about-me {
-  // padding: 50px;
   color: rgb(172, 171, 166);
   font-family: Arial, sans-serif;
   line-height: 1.6;
   font-size: 1.2rem;
   width: 80%;
+  @media (max-width: 760px) {
+    width: 90%;
+    padding-top: 20px;
+    text-align: justify;
+
+  }
 
   .image-container {
     float: right;
     margin: 0  0  0 1em;
     opacity: 0.8;
     padding-top: 50px;
+    padding-right: 10px;
     max-width: 250px;
     img {
       box-shadow: 0 4px 8px rgba(255,255,255,0.2),0 6px 20px rgba(255,255,255,0.15);
