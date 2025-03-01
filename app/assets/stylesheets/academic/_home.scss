@@ -349,6 +349,16 @@
       left: 0;
     }
 
+    #logoBoxPhone {
+      width: 150px;
+      height: 150px;
+      margin-left: 10px ;
+      margin-top: 30px ;
+      img {
+        width:100px;
+        height:100px
+      }
+    }
     .logo-box-academic {
       cursor: pointer;
       font-family: "Work Sans", Helvetica, "sans-serif";
@@ -361,6 +371,8 @@
       color: rgb(0, 0, 0);
       background-color: black;
       z-index: 101;
+
+
 
       .logo-content-artistic-academic {
         width: 150px;
@@ -515,6 +527,17 @@
 
         }
       }
+    }
+
+    #video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      text-align: center;
+      transform: translate(-50%, -50%);
     }
 
     .img-ph {

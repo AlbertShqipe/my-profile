@@ -67,8 +67,13 @@
   </div>
 
   <div class="first-section-phone" id="top-phone">
-    <div class="trapezoid-container" data-controller="logo-bounce">
-      <div class="logo-box-academic" id="logoBoxPhone">
+    <div class="trapezoid-container" data-controller="logo-bounce video">
+    <iframe id="video" src="https://player.vimeo.com/video/1061515430?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="" title="My profile">
+      </iframe>
+      <div id="logoBoxPhone">
+        <%= image_tag "N.png" %>
+      </div>
+      <%# <div class="logo-box-academic" id="logoBoxPhone">
         <div class="logo-content-artistic-academic">
           <div class="logo-a-academic">
             A
@@ -81,7 +86,7 @@
             N
           </div>
         </div>
-      </div>
+      </div> %>
 
       <div id="mySidenav-academic" class="sidenav-academic">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNavAcademic()">&times;</a>
@@ -103,11 +108,14 @@
       <div id="main-academic">
         <span style="z-index:5;font-size:50px;cursor:pointer; color:rgb(229, 229, 229)" onclick="openNavAcademic()">&#9776;</span>
       </div>
-      <div class="img-ph">
-      </div>
+      <%# <div class="img-ph">
+      </div> %>
+
+
+
       <div class="trapezoid">
         <div class="text-trapezoid">
-          <h1>Albert Nikolli</h1>
+          <h1 style="opacity:0">Albert Nikolli</h1>
           <p class="profession">Full-Stack Developper</p>
           <ul>
             <li>
@@ -132,7 +140,6 @@
               </a>
             </li>
           </ul>
-
         </div>
 
       </div>
