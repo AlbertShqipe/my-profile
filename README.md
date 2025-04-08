@@ -16,7 +16,7 @@ This portfolio highlights:
   Including web apps and showcase sites for competitions, choreographers, cafés, wellness practitioners, and beauty tech businesses.
 
 - 💼 **Tech Stack & Skills**  
-  Ruby on Rails · HTML · CSS (SCSS) · JavaScript · PostgreSQL · Git · Heroku · Render
+  Ruby on Rails · HTML · CSS (SCSS) · JavaScript · PostgreSQL · Git · Heroku
 
 - ✍️ **My Story**  
   A unique blend of discipline, creativity, and adaptability — from the stage to the command line.
