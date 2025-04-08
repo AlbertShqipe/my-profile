@@ -43,7 +43,7 @@ You can find me at:
 - **GitHub:** [AlbertShqipe](https://github.com/AlbertShqipe)  
 - **Email:** albert_nikolli@icloud.com
 - **Location:** Lyon, France  
-- LinkedIn (https://www.linkedin.com/in/albert-nikolli-b81554301/)
+- [LinkedIn](https://www.linkedin.com/in/albert-nikolli-b81554301/)
 
 ---
 
