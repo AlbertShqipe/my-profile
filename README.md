@@ -40,8 +40,8 @@ You can find me at:
 - **GitHub:** [AlbertShqipe](https://github.com/AlbertShqipe)  
 - **Email:** albert_nikolli@icloud.com
 - **Location:** Lyon, France  
-- [LinkedIn](https://www.linkedin.com/in/albert-nikolli-b81554301/)
-
+- **LinkedIn** [LinkedIn](https://www.linkedin.com/in/albert-nikolli-b81554301/)
+- **Website:** [Portfolio](https://www.albertnikolli.com)
 ---
 
 Thanks for visiting my portfolio — I hope you enjoy exploring my work!
