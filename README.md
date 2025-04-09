@@ -38,10 +38,10 @@ As a developer, I focus on:
 You can find me at:
 
 - **GitHub:** [AlbertShqipe](https://github.com/AlbertShqipe)  
+- **Website:** [Portfolio](https://www.albertnikolli.com)
+- **LinkedIn** [LinkedIn](https://www.linkedin.com/in/albert-nikolli-b81554301/)
 - **Email:** albert_nikolli@icloud.com
 - **Location:** Lyon, France  
-- **LinkedIn** [LinkedIn](https://www.linkedin.com/in/albert-nikolli-b81554301/)
-- **Website:** [Portfolio](https://www.albertnikolli.com)
 ---
 
 Thanks for visiting my portfolio — I hope you enjoy exploring my work!
