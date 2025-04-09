@@ -1,6 +1,6 @@
 # Albert Nikolli – Developer Portfolio
 
-Welcome to my personal portfolio — a place where I share my journey from professional ballet dancer to full-stack web developer. This site showcases the projects I've built for real clients across the arts, wellness, hospitality, and event industries.
+Welcome to my personal portfolio — a place where I share my journey from professional dancer to full-stack web developer. This site showcases the projects I've built for real clients across the arts, wellness, hospitality, and event industries.
 
 ## 👋 About Me
 
@@ -17,9 +17,6 @@ This portfolio highlights:
 
 - 💼 **Tech Stack & Skills**  
   Ruby on Rails · HTML · CSS (SCSS) · JavaScript · PostgreSQL · Git · Heroku
-
-- ✍️ **My Story**  
-  A unique blend of discipline, creativity, and adaptability — from the stage to the command line.
 
 ## 🚀 Technologies
 
