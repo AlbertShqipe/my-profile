@@ -360,8 +360,8 @@ body {
   margin: auto;
   position: relative;
 
-  @media (max-width: 760px) {
-    background-size: contain;
+  @media (max-width: 960px) {
+    background-size: 100% !important;
   }
 
   a {
