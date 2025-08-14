@@ -113,6 +113,29 @@
 
       <div id="mySidenav-academic" class="sidenav-academic">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNavAcademic()">&times;</a>
+        <div class="dropdown-">
+          <!-- Toggle image -->
+          <%= image_tag "language-light.png",
+                        class: "lang-img-ph dropdown-toggle",
+                        id: "languageDropdown",
+                        role: "button",
+                        tabindex: "0",
+                        data: { bs_toggle: "dropdown" },
+                        'aria-expanded': "false",
+                        alt: t("i18n.languages.#{I18n.locale}") %>
+
+          <!-- Menu -->
+          <ul class="dropdown-menu custom-dropdown-ph" aria-labelledby="languageDropdown">
+            <% I18n.available_locales.each do |loc| %>
+              <li>
+                <%= link_to url_for(locale: loc), class: "dropdown-item #{'active' if I18n.locale == loc}" do %>
+                  <%= image_tag "#{loc}.png", alt: t("i18n.languages.#{loc}"), class: "flag-icon me-2" %>
+                  <%= t("i18n.languages.#{loc}") %>
+                <% end %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
         <ul>
           <a href="#aboutMePh" onclick="closeNavAcademic()"><li><%= t("navbar.about") %></li></a>
           <a href="#skills" onclick="closeNavAcademic()"><li><%= t("navbar.skills") %></li></a>
@@ -157,29 +180,6 @@
                 </svg>
               </a>
             </li>
-          </ul>
-        </div>
-        <div class="dropdown-">
-          <!-- Toggle image -->
-          <% image_tag "language-light.png",
-                        class: "lang-img-ph dropdown-toggle",
-                        id: "languageDropdown",
-                        role: "button",
-                        tabindex: "0",
-                        data: { bs_toggle: "dropdown" },
-                        'aria-expanded': "false",
-                        alt: t("i18n.languages.#{I18n.locale}") %>
-
-          <!-- Menu -->
-          <ul class="dropdown-menu custom-dropdown-ph" aria-labelledby="languageDropdown">
-            <% I18n.available_locales.each do |loc| %>
-              <li>
-                <%= link_to url_for(locale: loc), class: "dropdown-item #{'active' if I18n.locale == loc}" do %>
-                  <%= image_tag "#{loc}.png", alt: t("i18n.languages.#{loc}"), class: "flag-icon me-2" %>
-                  <%= t("i18n.languages.#{loc}") %>
-                <% end %>
-              </li>
-            <% end %>
           </ul>
         </div>
       </div>

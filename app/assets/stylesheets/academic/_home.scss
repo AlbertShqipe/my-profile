@@ -292,6 +292,11 @@
         color: rgb(229, 229, 229);
         display: block;
         transition: 0.3s;
+
+        @media (max-width: 960px) {
+          font-size: 18px;
+
+        }
       }
 
       .sidenav-academic .contact-a {
@@ -306,6 +311,10 @@
           background-color: black;
           color: rgb(224, 216, 175);
           border-bottom: 1px solid white;
+        }
+
+        @media (max-width: 960px) {
+          font-size: 17px;
         }
       }
 
