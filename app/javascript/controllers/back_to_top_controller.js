@@ -6,11 +6,11 @@ export default class extends Controller {
     const icon = document.getElementById('backToTop');
 
     if (!icon) {
-        console.warn("Element #backToTop not found");
+        // console.warn("Element #backToTop not found");
         return;
     }
 
-    console.log(icon);
+    // console.log(icon);
 
     // Get all sections in the main container
     const sections = document.querySelectorAll('.main-container > div');
@@ -26,7 +26,7 @@ export default class extends Controller {
             // Check if the bottom of the icon is within this section's top and bottom bounds
             if (iconBottom >= sectionRect.top && iconBottom <= sectionRect.bottom) {
                 const bgColor = window.getComputedStyle(section).backgroundColor;
-                console.log(`Found background color for section: ${bgColor}`);
+                // console.log(`Found background color for section: ${bgColor}`);
                 return bgColor;
             }
         }
@@ -52,7 +52,7 @@ export default class extends Controller {
 
     function updateIconColor() {
         const bgColor = getSectionBackgroundColor(); // Get the background color of the section
-        console.log("Background color at position:", bgColor);
+        // console.log("Background color at position:", bgColor);
 
         // Extract RGB values from the background color
         // const rgbMatch = bgColor.match(/\d+/g);

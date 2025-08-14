@@ -1,0 +1,33 @@
+it:
+  navbar:
+    about: "Chi Sono"
+    skills: "Competenze"
+    portfolio: "Portfolio"
+    contact: "CONTATTAMI"
+
+  home:
+    welcome: "Benvenuto"
+    first_section:
+      p_intro_1: "Questa pagina è dedicata a presentare i miei successi professionali, condividere informazioni sulla mia carriera artistica, i miei progetti come sviluppatore full stack e mostrare il mio portfolio."
+      p_intro_2: "Tutti i diritti e le immagini presenti in questa pagina sono riservati. L'uso o la duplicazione non autorizzati di questo materiale senza il permesso esplicito e scritto dell'autore sono severamente vietati."
+    second_section:
+      about: "CHI SONO"
+      about_p: "Mi chiamo Albert Nikolli e sono uno sviluppatore full stack. Ho una passione per la programmazione e sono sempre alla ricerca di nuove sfide. Imparo velocemente e cerco costantemente modi per migliorare le mie competenze. Ho esperienza con HTML, CSS, JavaScript, Ruby on Rails e SQL. Inoltre, conosco Git, GitHub e Heroku. Attualmente sono alla ricerca di nuove opportunità per lavorare a progetti entusiasmanti ed espandere le mie conoscenze."
+      design: "DESIGN"
+      design_p: "Posso progettare il sito in base alle tue esigenze e ai tuoi suggerimenti.<br>Posso anche creare il design da zero e offrirti consulenza durante il lavoro."
+      development: "SVILUPPO"
+      development_p: "Posso sviluppare il sito in base alle tue esigenze e specifiche, assicurandomi che soddisfi tutti i requisiti. Che si tratti di partire da un design preesistente o di crearlo da zero."
+      maintenance: "MANUTENZIONE"
+      maintenance_p: "Offro servizi di manutenzione continua per garantire che il tuo sito web rimanga aggiornato, sicuro e pienamente funzionale."
+    third_section:
+      skills: "COMPETENZE"
+      using: "ATTUALMENTE USO"
+      learning: "IN APPRENDIMENTO"
+    forth_section:
+      many_more: "E molti altri in arrivo!"
+    fifth_section:
+      contact: "CONTATTI"
+      contact_p: "Sentiti libero di inviare questo modulo con un messaggio e ti contatterò il prima possibile."
+
+  footer:
+    back_to_top: "TORNA SU"

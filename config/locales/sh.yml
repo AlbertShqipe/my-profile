@@ -1,0 +1,33 @@
+sh:
+  navbar:
+    about: "Rreth Meje"
+    skills: "Aftësitë"
+    portfolio: "Portofoli"
+    contact: "KONTAKTO MUA"
+
+  home:
+    welcome: "Mirësevini"
+    first_section:
+      p_intro_1: "Kjo faqe është e dedikuar për të paraqitur arritjet e mia profesionale, për të ndarë informacione rreth karrierës sime artistike, projektet e mia si zhvillues full stack dhe për të shfaqur portofolin tim."
+      p_intro_2: "Të gjitha të drejtat dhe imazhet në këtë faqe janë të rezervuara. Përdorimi ose kopjimi i paautorizuar i këtij materiali pa lejen e shprehur me shkrim nga autori është rreptësisht i ndaluar."
+    second_section:
+      about: "RRETH MEJE"
+      about_p: "Quhem Albert Nikolli dhe jam zhvillues full stack. Kam pasion programimin dhe gjithmonë kërkoj sfida të reja. Mësoj shpejt dhe gjithmonë kërkoj mënyra për të përmirësuar aftësitë e mia. Kam përvojë me HTML, CSS, JavaScript, Ruby on Rails dhe SQL. Gjithashtu, jam i njohur me Git, GitHub dhe Heroku. Aktualisht jam në kërkim të mundësive të reja për të punuar në projekte emocionuese dhe për të zgjeruar njohuritë e mia."
+      design: "DISEJNIM"
+      design_p: "Mund ta dizajnoj faqen sipas nevojave dhe sugjerimeve tuaja.<br>Mund ta krijoj gjithashtu nga fillimi dhe t’ju këshilloj gjatë procesit."
+      development: "ZHVILLIM"
+      development_p: "Mund ta zhvilloj faqen sipas nevojave dhe specifikimeve tuaja, duke u siguruar që plotëson të gjitha kërkesat – qoftë duke filluar nga një dizajn ekzistues apo nga fillimi."
+      maintenance: "MIRËMBAJTJE"
+      maintenance_p: "Ofroj shërbime të vazhdueshme mirëmbajtjeje për të siguruar që faqja juaj të mbetet e përditësuar, e sigurt dhe plotësisht funksionale."
+    third_section:
+      skills: "AFTËSITË"
+      using: "DUKE PËRDORUR TANI"
+      learning: "DUKE MËSUAR"
+    forth_section:
+      many_more: "Dhe shumë të tjera që do të vijnë!"
+    fifth_section:
+      contact: "KONTAKTI"
+      contact_p: "Mos hezitoni të plotësoni këtë formular me një mesazh dhe unë do t’ju kontaktoj sa më shpejt të jetë e mundur."
+
+  footer:
+    back_to_top: "KTHEHU NË KRYE"

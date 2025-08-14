@@ -1,31 +1,33 @@
-# Files in the config/locales directory are used for internationalization and
-# are automatically loaded by Rails. If you want to use locales other than
-# English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more about the API, please read the Rails Internationalization guide
-# at https://guides.rubyonrails.org/i18n.html.
-#
-# Be aware that YAML interprets the following case-insensitive strings as
-# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
-# must be quoted to be interpreted as strings. For example:
-#
-#     en:
-#       "yes": yup
-#       enabled: "ON"
-
 en:
-  hello: "Hello world"
+  navbar:
+    about: "About Me"
+    skills: "Skills"
+    portfolio: "Portfolio"
+    contact: "CONTACT ME"
+
+  home:
+    welcome: "Welcome"
+    first_section:
+      p_intro_1: "This page is dedicated to presenting my professional achievements, sharing information about my artistic career, my projects as a full stack developer, and showcasing my portfolio."
+      p_intro_2: "All rights and images on this page are reserved. Unauthorized use or duplication of this material without express and written permission from the author is strictly prohibited."
+    second_section:
+      about: "ABOUT ME"
+      about_p: "My name is Albert Nikolli and I am a full-stack developer. I have a passion for coding and I am always looking for new challenges. I am a quick learner and I am always looking for ways to improve my skills. I have experience with HTML, CSS, JavaScript, Ruby on Rails, and SQL. I am also familiar with Git, GitHub, and Heroku. I am currently looking for new opportunities to work on exciting projects and expand my knowledge."
+      design: "DESIGN"
+      design_p: "I can design the site based on your needs and suggestions.<br>I can also design the site from scratch and consult you during the job."
+      development: "DEVELOPMENT"
+      development_p: "I can develop the site based on your needs and specifications, ensuring it meets all your requirements. Whether starting from a pre-existing design or building it from scratch."
+      maintenance: "MAINTENANCE"
+      maintenance_p: "I offer ongoing maintenance services to ensure your website remains up-to-date, secure, and fully functional."
+    third_section:
+      skills: "SKILLS"
+      using: "USING NOW"
+      learning: "LEARNING"
+    forth_section:
+      many_more: "And many more to come!"
+    fifth_section:
+      contact: "CONTACT"
+      contact_p: "Feel free to submit this form with a message and I will contact you as soon as possible."
+
+  footer:
+    back_to_top: "BACK TO TOP"

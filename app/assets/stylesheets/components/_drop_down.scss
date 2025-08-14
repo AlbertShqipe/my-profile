@@ -1,0 +1,123 @@
+/* Custom dropdown styles */
+.custom-dropdown {
+  background-color: #000000; /* dark background */
+  border: 1px solid #333;
+}
+
+.custom-dropdown .dropdown-item {
+  color: #f0f0f0; /* light text */
+}
+
+.custom-dropdown .dropdown-item:hover,
+.custom-dropdown .dropdown-item:focus {
+  background-color: #444; /* hover color */
+  color: #ffffff;
+}
+
+.custom-dropdown .dropdown-item.active {
+  background-color: #0066cc; /* active language background */
+  color: white;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.lang-img-ph {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 100px;
+  top: 280px;         /* override Bootstrap’s top */
+}
+
+/* Dark themed menu */
+.custom-dropdown-ph {
+  background-color: #000;
+  border: 1px solid #333;
+  min-width: 12rem;              /* nice width on desktop */
+  padding: .25rem 0;
+}
+.custom-dropdown-ph .dropdown-item {
+  color: #f0f0f0;
+
+}
+.custom-dropdown-ph .dropdown-item:hover,
+.custom-dropdown-ph .dropdown-item:focus {
+  background-color: #444;
+  color: #fff;
+
+}
+.custom-dropdown-ph .dropdown-item.active {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+/* Flag icons */
+.flag-icon {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+/* ===== Desktop positioning (when not using .dropdown wrapper) ===== */
+@media (min-width: 577px) {
+  .dropdown- > .dropdown-menu {
+    position: absolute;          /* position relative to .dropdown- */
+    inset: auto 0 auto auto;     /* right-align under the toggle */
+    transform: translateY(6px);  /* slight offset below image */
+
+  }
+}
+
+/* ===== Mobile bottom sheet (≤576px) ===== */
+@media (max-width: 576px) {
+  .lang-img-ph {
+    width: 36px;
+    height: 36px;
+  }
+
+  .custom-dropdown-ph.dropdown-menu {
+    position: fixed !important;  /* detach from trigger */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    transform: none !important;  /* override popper transforms */
+    width: 100vw;
+    max-height: 60vh;            /* scroll if many locales */
+    overflow-y: auto;
+    margin: 0;                   /* remove default margins */
+    border-radius: 16px 16px 0 0;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0) + 8px);
+    z-index: 1080;               /* above navbar */
+  }
+
+  .custom-dropdown-ph .dropdown-item {
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    min-height: 44px;            /* comfy tap target */
+  }
+
+  .custom-dropdown-ph .flag-icon {
+    width: 24px;
+    height: 16px;
+    margin-right: .5rem;
+  }
+
+  /* Dim the page behind the sheet when open */
+  .dropdown-.show::before,
+  .dropdown-.dropdown-open-backdrop::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    z-index: 1075;
+  }
+}

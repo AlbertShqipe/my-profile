@@ -1,0 +1,33 @@
+fr:
+  navbar:
+    about: "À propos de moi"
+    skills: "Compétences"
+    portfolio: "Portfolio"
+    contact: "CONTACTEZ-MOI"
+
+  home:
+    welcome: "Bienvenue"
+    first_section:
+      p_intro_1: "Cette page est dédiée à la présentation de mes réalisations professionnelles, au partage d’informations sur ma carrière artistique, mes projets en tant que développeur full stack, et à la présentation de mon portfolio."
+      p_intro_2: "Tous les droits et images de cette page sont réservés. Toute utilisation ou duplication non autorisée de ce matériel sans l’autorisation expresse et écrite de l’auteur est strictement interdite."
+    second_section:
+      about: "À PROPOS DE MOI"
+      about_p: "Je m'appelle Albert Nikolli et je suis développeur full stack. J'ai une passion pour le codage et je suis toujours à la recherche de nouveaux défis. J'apprends rapidement et je cherche constamment des moyens d'améliorer mes compétences. J'ai de l'expérience avec HTML, CSS, JavaScript, Ruby on Rails et SQL. Je connais également Git, GitHub et Heroku. Je suis actuellement à la recherche de nouvelles opportunités pour travailler sur des projets passionnants et élargir mes connaissances."
+      design: "DESIGN"
+      design_p: "Je peux concevoir le site en fonction de vos besoins et suggestions.<br>Je peux également créer le design à partir de zéro et vous conseiller pendant le travail."
+      development: "DÉVELOPPEMENT"
+      development_p: "Je peux développer le site selon vos besoins et spécifications, en veillant à ce qu’il réponde à toutes vos exigences, que ce soit à partir d’un design existant ou en partant de zéro."
+      maintenance: "MAINTENANCE"
+      maintenance_p: "Je propose des services de maintenance continue afin de garantir que votre site reste à jour, sécurisé et pleinement fonctionnel."
+    third_section:
+      skills: "COMPÉTENCES"
+      using: "ACTUELLEMENT UTILISÉ"
+      learning: "EN APPRENTISSAGE"
+    forth_section:
+      many_more: "Et bien d'autres à venir !"
+    fifth_section:
+      contact: "CONTACT"
+      contact_p: "N'hésitez pas à remplir ce formulaire avec un message et je vous contacterai dès que possible."
+
+  footer:
+    back_to_top: "RETOUR EN HAUT"

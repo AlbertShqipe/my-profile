@@ -1,0 +1,33 @@
+de:
+  navbar:
+    about: "Über mich"
+    skills: "Fähigkeiten"
+    portfolio: "Portfolio"
+    contact: "KONTAKTIERE MICH"
+
+  home:
+    welcome: "Willkommen"
+    first_section:
+      p_intro_1: "Diese Seite ist der Präsentation meiner beruflichen Erfolge, dem Teilen von Informationen über meine künstlerische Laufbahn, meinen Projekten als Full-Stack-Entwickler und der Präsentation meines Portfolios gewidmet."
+      p_intro_2: "Alle Rechte und Bilder auf dieser Seite sind vorbehalten. Die unbefugte Nutzung oder Vervielfältigung dieses Materials ohne ausdrückliche schriftliche Genehmigung des Autors ist strengstens untersagt."
+    second_section:
+      about: "ÜBER MICH"
+      about_p: "Mein Name ist Albert Nikolli und ich bin Full-Stack-Entwickler. Ich habe eine Leidenschaft für Programmierung und bin immer auf der Suche nach neuen Herausforderungen. Ich lerne schnell und suche ständig nach Möglichkeiten, meine Fähigkeiten zu verbessern. Ich habe Erfahrung mit HTML, CSS, JavaScript, Ruby on Rails und SQL. Außerdem bin ich mit Git, GitHub und Heroku vertraut. Derzeit suche ich nach neuen Möglichkeiten, an spannenden Projekten zu arbeiten und mein Wissen zu erweitern."
+      design: "DESIGN"
+      design_p: "Ich kann die Website nach deinen Bedürfnissen und Vorschlägen gestalten.<br>Ich kann das Design auch von Grund auf erstellen und dich während des Prozesses beraten."
+      development: "ENTWICKLUNG"
+      development_p: "Ich kann die Website nach deinen Anforderungen und Spezifikationen entwickeln und sicherstellen, dass sie alle deine Erwartungen erfüllt – egal, ob aus einem bestehenden Design oder von Grund auf."
+      maintenance: "WARTUNG"
+      maintenance_p: "Ich biete fortlaufende Wartungsdienste an, um sicherzustellen, dass deine Website aktuell, sicher und voll funktionsfähig bleibt."
+    third_section:
+      skills: "FÄHIGKEITEN"
+      using: "AKTUELL VERWENDET"
+      learning: "LERNE"
+    forth_section:
+      many_more: "Und viele weitere folgen!"
+    fifth_section:
+      contact: "KONTAKT"
+      contact_p: "Fülle dieses Formular mit einer Nachricht aus, und ich werde dich so schnell wie möglich kontaktieren."
+
+  footer:
+    back_to_top: "ZURÜCK NACH OBEN"
