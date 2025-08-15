@@ -52,6 +52,7 @@
 .custom-dropdown-ph .dropdown-item.active {
   background-color: #0066cc;
   color: #fff;
+  border-radius: 16px;
 }
 
 /* Flag icons */
@@ -62,15 +63,6 @@
   vertical-align: middle;
 }
 
-/* ===== Desktop positioning (when not using .dropdown wrapper) ===== */
-// @media (min-width: 577px) {
-//   .dropdown- > .dropdown-menu {
-//     position: absolute;          /* position relative to .dropdown- */
-//     inset: auto 0 auto auto;     /* right-align under the toggle */
-//     transform: translateY(6px);  /* slight offset below image */
-
-//   }
-// }
 
 /* ===== Mobile bottom sheet (≤576px) ===== */
 @media (max-width: 576px) {
@@ -88,7 +80,7 @@
     max-height: 60vh;            /* scroll if many locales */
     overflow-y: auto;
     margin: 0;                   /* remove default margins */
-    border-radius: 16px 16px 0 0;
+    border-radius: 16px 16px 16px 16px;
     padding-bottom: calc(env(safe-area-inset-bottom, 0) + 8px);
     z-index: 1080;               /* above navbar */
   }
