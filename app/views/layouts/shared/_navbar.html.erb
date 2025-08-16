@@ -1,9 +1,9 @@
 <div class="navbar" data-controller="burger-menu logo-bounce" >
   <div class="logo-box" id="logoBoxArtistic">
     <div class="logo-content-artistic">
-        <div class="logo-a">
-          A
-        </div>
+      <div class="logo-a">
+        A
+      </div>
       <div class="logo-dark-spot"></div>
       <div class="logo-slash">
         |
@@ -31,16 +31,14 @@
     <div id="main">
       <div id="menu-container" style="display: none;">
         <ul>
-          <li><a href="/">HOME</a></li>
+          <li><%= link_to "HOME", root_path %></li>
+
           <% if controller_name == "pages" && action_name == "biography" %>
-            <li><a href="/media">MEDIA</a></li>
-          <%else%>
-            <li><a href="/biography">BIOGRAPHY</a></li>
+            <li><%= link_to "MEDIA", media_path %></li>
+          <% else %>
+            <li><%= link_to "BIOGRAPHY", biography_path %></li>
           <% end %>
-          <%# <li><a href="/media">MEDIA</a></li> %>
         </ul>
-        <%# <%=image_tag 'N.png' %>
-        <%# <p>This page is being constructed, so please be patient until the magic is released!</p> %>
       </div>
     </div>
   </div>

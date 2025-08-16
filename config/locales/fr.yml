@@ -31,3 +31,36 @@ fr:
 
   footer:
     back_to_top: "RETOUR EN HAUT"
+
+  biography: |
+    <div class="container pt-5">
+      <p>
+        Je suis né en Albanie le <strong>2 juillet 1995</strong>, où ma passion pour la danse a commencé dès mon plus jeune âge. À seulement cinq ans, j’ai dit à ma mère que je voulais faire du ballet, mais les opportunités étaient limitées dans ma ville natale, Rrëshen. Tout a changé en 2001 lorsque ma famille a déménagé en <strong>Italie</strong>, où j’ai enfin fait mes premiers pas de ballet.
+      </p>
+      <p>
+        Depuis, la danse est ma force motrice. Parmi mes étapes les plus marquantes :
+      </p>
+      <ul>
+        <li>
+          <strong>2011 :</strong> Sélectionné parmi les 12 meilleurs danseurs au <strong>Youth America Grand Prix (YAGP)</strong>, ce qui m’a valu une invitation à la prestigieuse <strong>École de Ballet de Hambourg de John Neumeier</strong>.
+        </li>
+        <li>
+          <strong>2013 :</strong> Diplômé et intégré au <strong>Bundesjugendballett</strong>, acquérant une expérience inestimable.
+        </li>
+        <li>
+          <strong>2014-2016 :</strong> Interprété des rôles principaux avec la <strong>Tanzcompany Innsbruck</strong>, notamment <em>Charlie Chaplin</em> et <em>Firebird</em>.
+        </li>
+        <li>
+          <strong>2016-Présent :</strong> Intégré au <strong>Ballet de l’Opéra de Lyon</strong>, collaborant avec des chorégraphes de renommée mondiale tels que <strong>Jiri Kylian</strong>, <strong>Russell Maliphant</strong>, <strong>William Forsythe</strong> et <strong>Nacho Duato</strong>, ainsi qu’avec les assistants de <strong>Pina Bausch</strong>, <strong>Merce Cunningham</strong> et <strong>Trisha Brown</strong>, qui ont redonné vie à leurs œuvres emblématiques.
+        </li>
+      </ul>
+      <p>
+        L’un des moments forts de ma carrière a été l’interprétation du duo <em>Critical Mass</em> de <strong>Russell Maliphant</strong> lors du <strong>Prix de Lausanne Gala (2019)</strong>. La créativité et le style de Russell continuent d’influencer mon développement artistique.
+      </p>
+      <p>
+        En <strong>2021</strong>, j’ai obtenu le <strong>Diplôme d’État</strong>, me permettant de partager ma passion par l’enseignement. J’ai enseigné au <strong>Conservatoire National Supérieur de Musique et de Danse (CNSMD) de Lyon</strong>, mettant en scène <em>Critical Mass</em> pour les remises de diplômes des étudiants.
+      </p>
+      <p>
+        De l’Albanie à la scène internationale, mon parcours a été fait de passion, de résilience et de croissance. La danse n’est pas seulement ma carrière — c’est la plus grande inspiration de ma vie.
+      </p>
+    </div>
