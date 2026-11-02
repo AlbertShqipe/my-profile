@@ -1,8 +1,32 @@
-<div style="display: flex; justify-content:center;" class="mt-5">
-  <section id="about-me">
-    <div class="image-container">
-      <%=image_tag 'img0.png'%>
+<section class="bio-hero wrap">
+  <div class="bio-hero__copy">
+    <p class="stage-eyebrow"><%= t("stage.biography.eyebrow") %></p>
+    <h1 class="stage-title">Albert <em>Nikolli</em></h1>
+    <p class="bio-hero__role"><%= t("stage.biography.role") %></p>
+  </div>
+  <figure class="bio-hero__portrait">
+    <%= image_tag "bio.webp", alt: "Albert Nikolli", width: 894, height: 1152 %>
+  </figure>
+</section>
+
+<%# The biography text lives in the locale files; its list of milestones is styled as a timeline %>
+<section class="bio-text wrap">
+  <%= t("biography").html_safe %>
+</section>
+
+<section class="bio-bridge wrap">
+  <div class="bio-bridge__card">
+    <%= image_tag "an/an-logo.png", alt: "A.N Arts & Software", class: "bio-bridge__logo", loading: "lazy" %>
+    <div>
+      <p class="stage-eyebrow"><%= t("stage.biography.bridge_eyebrow") %></p>
+      <h2>A.N Arts &amp; Software</h2>
+      <p><%= t("stage.biography.bridge_text") %></p>
+      <div class="bio-bridge__ctas">
+        <a href="<%= AcademicHelper::COMPANY_URL %>" class="btn-pill btn-pill--light" target="_blank" rel="noopener">
+          <%= t("stage.biography.cta_company") %> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+        <%= link_to t("stage.biography.cta_portfolio"), root_path, class: "btn-pill btn-pill--outline-light" %>
+      </div>
     </div>
-    <%= t("biography").html_safe %>
-  </section>
-</div>
+  </div>
+</section>

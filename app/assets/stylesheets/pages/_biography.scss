@@ -1,57 +1,154 @@
-#about-me {
-  color: rgb(172, 171, 166);
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  font-size: 1.2rem;
-  width: 80%;
-  @media (max-width: 760px) {
-    width: 90%;
-    padding-top: 20px;
-    text-align: justify;
+// Biography: portrait hero, the text with its milestones as a timeline, and the bridge to A.N
 
+.bio-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
+  padding-block: clamp(3rem, 8vw, 6rem) clamp(2.5rem, 6vw, 4rem);
+
+  &__role {
+    margin: 1.25rem 0 0;
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
+    color: $muted-dark;
   }
 
-  .image-container {
-    float: right;
-    margin: 0  0  0 1em;
-    opacity: 0.8;
-    padding-top: 50px;
-    padding-right: 10px;
-    max-width: 250px;
+  &__portrait {
+    margin: 0;
+    justify-self: end;
+    width: min(100%, 22rem);
+
     img {
-      box-shadow: 0 4px 8px rgba(255,255,255,0.2),0 6px 20px rgba(255,255,255,0.15);
+      display: block;
       width: 100%;
       height: auto;
-    }
-    @media (max-width: 760px) {
-      max-width: 150px;
+      filter: grayscale(1) contrast(1.05);
+      box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .8);
     }
   }
-}
-
-#about-me h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-#about-me p {
-  margin-bottom: 20px;
-}
-
-#about-me ul {
-  margin: 20px 0;
-  padding-left: 40px;
-  list-style-type: none;
 
   @media (max-width: 760px) {
-    padding-left: 0px;
-    width: 90%;
-    margin: auto;
+    grid-template-columns: minmax(0, 1fr);
 
+    &__portrait {
+      order: -1;
+      justify-self: start;
+      width: 60%;
+    }
   }
 }
 
-#about-me li {
-  margin-bottom: 10px;
+.bio-text {
+  padding-bottom: clamp(3rem, 8vw, 6rem);
+
+  // Wrapper markup comes from the locale files
+  .container {
+    max-width: 46rem;
+    margin: 0;
+    padding: 0 !important;
+  }
+
+  p {
+    margin: 0 0 1.5rem;
+    font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+    line-height: 1.75;
+    color: #c9c9c6;
+  }
+
+  strong {
+    font-weight: 600;
+    color: #fff;
+  }
+
+  em {
+    font-family: $serif-font;
+    font-size: 1.1em;
+  }
+
+  // Milestones as a vertical timeline
+  ul {
+    position: relative;
+    margin: 2.5rem 0 3rem;
+    padding: 0 0 0 2rem;
+    list-style: none;
+    border-left: 1px solid rgba(255, 255, 255, .14);
+  }
+
+  li {
+    position: relative;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #b5b5b2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: calc(-2rem - 5px);
+      top: .55rem;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: $champagne;
+      box-shadow: 0 0 0 4px $ink;
+    }
+
+    > strong:first-child {
+      display: block;
+      margin-bottom: .25rem;
+      font-family: $serif-font;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: $champagne;
+    }
+  }
+}
+
+.bio-bridge {
+  padding-bottom: clamp(4rem, 10vw, 7rem);
+
+  &__card {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(1.5rem, 5vw, 3.5rem);
+    padding: clamp(1.75rem, 5vw, 3.5rem);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 24px;
+    background:
+      radial-gradient(90% 120% at 100% 0%, rgba(163, 23, 95, .35), transparent 60%),
+      radial-gradient(80% 100% at 0% 100%, rgba(42, 20, 102, .5), transparent 60%),
+      $ink-soft;
+
+    h2 {
+      margin: 0 0 1rem;
+      font-family: $serif-font;
+      font-size: clamp(1.9rem, 4vw, 2.75rem);
+      font-weight: 400;
+      color: #fff;
+    }
+
+    p:not(.stage-eyebrow) {
+      max-width: 36rem;
+      margin: 0;
+      line-height: 1.7;
+      color: #c9c9c6;
+    }
+
+    @media (max-width: 760px) {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  &__logo {
+    width: clamp(6rem, 14vw, 10rem);
+    height: auto;
+  }
+
+  &__ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-top: 2rem;
+  }
 }

@@ -4,33 +4,100 @@ de:
     skills: "Fähigkeiten"
     portfolio: "Portfolio"
     contact: "KONTAKTIERE MICH"
+    menu: "Menü"
+    close: "Menü schließen"
+    language: "Sprache"
+    company: "A.N Arts & Software"
+    biography: "Biografie"
+    media: "Medien"
+    portfolio_link: "Portfolio"
 
   home:
+    hero:
+      cta_work: "Meine Arbeiten"
+      cta_contact: "Lass uns reden"
+      role: "Gründer von A.N Arts & Software · Full-Stack-Entwickler"
     welcome: "Willkommen"
     first_section:
       p_intro_1: "Diese Seite ist der Präsentation meiner beruflichen Erfolge, dem Teilen von Informationen über meine künstlerische Laufbahn, meinen Projekten als Full-Stack-Entwickler und der Präsentation meines Portfolios gewidmet."
       p_intro_2: "Alle Rechte und Bilder auf dieser Seite sind vorbehalten. Die unbefugte Nutzung oder Vervielfältigung dieses Materials ohne ausdrückliche schriftliche Genehmigung des Autors ist strengstens untersagt."
     second_section:
       about: "ÜBER MICH"
-      about_p: "Mein Name ist Albert Nikolli und ich bin Full-Stack-Entwickler. Ich habe eine Leidenschaft für Programmierung und bin immer auf der Suche nach neuen Herausforderungen. Ich lerne schnell und suche ständig nach Möglichkeiten, meine Fähigkeiten zu verbessern. Ich habe Erfahrung mit HTML, CSS, JavaScript, Ruby on Rails und SQL. Außerdem bin ich mit Git, GitHub und Heroku vertraut. Derzeit suche ich nach neuen Möglichkeiten, an spannenden Projekten zu arbeiten und mein Wissen zu erweitern."
+      about_p: "Ich bin Albert Nikolli: Tänzer im Ballet de l'Opéra de Lyon, Full-Stack-Entwickler und Gründer von A.N Arts & Software."
+      about_p_2: "A.N Arts & Software ist ein französisches Softwareunternehmen mit Sitz in Lyon, das elegante und effiziente Werkzeuge für Opernhäuser, Ballettcompagnien und Künstler entwickelt, dazu Websites und maßgeschneiderte Plattformen für Unternehmen, denen gutes Handwerk wichtig ist."
       design: "DESIGN"
       design_p: "Ich kann die Website nach deinen Bedürfnissen und Vorschlägen gestalten.<br>Ich kann das Design auch von Grund auf erstellen und dich während des Prozesses beraten."
       development: "ENTWICKLUNG"
       development_p: "Ich kann die Website nach deinen Anforderungen und Spezifikationen entwickeln und sicherstellen, dass sie alle deine Erwartungen erfüllt – egal, ob aus einem bestehenden Design oder von Grund auf."
       maintenance: "WARTUNG"
       maintenance_p: "Ich biete fortlaufende Wartungsdienste an, um sicherzustellen, dass deine Website aktuell, sicher und voll funktionsfähig bleibt."
+    company:
+      tagline: "Softwarelösungen mit einem Herz für Kultur."
+      intro: "A.N Arts & Software entwickelt Werkzeuge für Kulturorganisationen: Institutionen, Compagnien und Künstler, die Technologie brauchen, die ihre Ästhetik respektiert und ihre Mission stärkt."
+      flagship: "Hauptprodukt"
+      an_audition: "Eine vollständige digitale Lösung zur Verwaltung von Auditions, von der Bewerbung bis zur finalen Entscheidung."
+      software_title: "Individuelle Software"
+      software: "Maßgeschneiderte Software, gebaut um die Abläufe und Bedürfnisse deiner Organisation."
+      web_title: "Webdesign & Entwicklung"
+      web: "Websites und digitale Erlebnisse, die die visuelle Identität und die Mission deiner Marke würdigen."
+      stats:
+        candidates: "Bearbeitete Bewerbungen"
+        sessions: "Durchgeführte Auditions"
+        organisations: "Organisationen"
+        setup: "Bis zur Einsatzbereitschaft"
+      trusted: "Sie vertrauen AN AUDITION"
+      visit: "anartssoftware.com besuchen"
     third_section:
       skills: "FÄHIGKEITEN"
       using: "AKTUELL VERWENDET"
       learning: "LERNE"
     forth_section:
+      projects: "Ausgewählte Projekte"
+      cultural: "Kultur"
+      other: "Andere Branchen"
+      tags:
+        an_audition: "AN AUDITION"
+        website: "Website"
+        web_app: "Web-App"
+        saas: "SaaS-Plattform"
+        rental: "Vermietungsplattform"
       many_more: "Und viele weitere folgen!"
     fifth_section:
       contact: "KONTAKT"
       contact_p: "Fülle dieses Formular mit einer Nachricht aus, und ich werde dich so schnell wie möglich kontaktieren."
+      form:
+        name: "Name"
+        email: "E-Mail"
+        message: "Nachricht"
+        name_placeholder: "Dein Name"
+        email_placeholder: "du@beispiel.de"
+        message_placeholder: "Erzähl mir von deinem Projekt…"
+        send: "Nachricht senden"
+        direct: "Oder schreib mir direkt"
 
   footer:
     back_to_top: "ZURÜCK NACH OBEN"
+    rights: "Alle Rechte vorbehalten."
+    founder: "Gründer von A.N Arts & Software"
+
+  stage:
+    biography:
+      eyebrow: "Biografie"
+      role: "Tänzer · Ballet de l'Opéra de Lyon"
+      bridge_eyebrow: "Heute"
+      bridge_text: "Alles, was ich auf der Bühne gelernt habe, prägt heute A.N Arts & Software: Werkzeuge für Opernhäuser, Ballettcompagnien und Künstler."
+      cta_company: "A.N Arts & Software entdecken"
+      cta_portfolio: "Mein Portfolio ansehen"
+    media:
+      eyebrow: "Auf der Bühne"
+      intro: "Momente von der Bühne, mit den Choreografen, die meinen Weg geprägt haben."
+      scenes: "Szenen"
+      video: "In Bewegung"
+      gallery: "Galerie"
+      open: "Foto öffnen"
+      close: "Schließen"
+      prev: "Zurück"
+      next: "Weiter"
 
   biography: |
     <div class="container pt-5">
@@ -59,8 +126,5 @@ de:
       </p>
       <p>
         Im <strong>2021</strong> erhielt ich das <strong>Diplôme d’État</strong>, das es mir ermöglicht, meine Leidenschaft durch Unterricht weiterzugeben. Ich habe am <strong>Conservatoire National Supérieur de Musique et de Danse (CNSMD) in Lyon</strong> unterrichtet und <em>Critical Mass</em> für Abschlussprüfungen der Studierenden inszeniert.
-      </p>
-      <p>
-        Von Albanien bis zur internationalen Bühne war mein Weg von Leidenschaft, Ausdauer und Wachstum geprägt. Tanz ist nicht nur meine Karriere, er ist die größte Inspiration meines Lebens.
       </p>
     </div>

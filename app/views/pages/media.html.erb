@@ -1,113 +1,67 @@
-<div data-controller="back-to-top">
-  <div class="scrollTopElement page" id="scrollElement">
-    <div class="img-container mt-5">
-      <div class="first-row">
-        <div onclick="scrollToNNNN('forsythe')" class="div1 img"></div>
-        <div onclick="scrollToGD('G&D')" class="div2 img"></div>
-        <div onclick="scrollCriMas('maliphant')" class="div3 img"></div>
-      </div>
-      <div class="second-row">
-        <div class="div1 img"></div>
-        <div class="div2 img"></div>
-      </div>
-      <div class="third-row">
-        <div class="div1 img"></div>
-        <div onclick="scrollKylian('kylian')" class="div2 img"></div>
-        <div onclick="scrollToCunningham('cunningham')" class="div3 img"></div>
-        <div class="div4 img"></div>
-      </div>
+<% scenes = [
+  { id: "kylian",     image: "media/kylian.webp",        quote: "“The changing of a person into a dancer is the most beautiful thing.”", author: "Jiří Kylián",       url: "http://www.jirikylian.com/",                                  credit: "Blandine Soulage" },
+  { id: "cunningham", image: "media/cunningham.webp",    quote: "“Falling is one of the ways of moving.”",                                 author: "Merce Cunningham",  url: "https://www.mercecunningham.org/about/merce-cunningham/",    credit: "Agathe Poupeney" },
+  { id: "forsythe",   image: "media/forsythe.webp",      quote: "“No one has any idea what really works.”",                                author: "William Forsythe",  url: "https://www.williamforsythe.com",                            credit: "Agathe Poupeney" },
+  { id: "maliphant",  image: "media/critical-mass.webp", quote: "Critical Mass",                                                           author: "Russell Maliphant", url: "https://www.russellmaliphantdancecompany.com/",              credit: "Blandine Soulage" },
+  { id: "de-keersmaeker", image: "media/la-nuit-transfiguree.webp", quote: "La Nuit transfigurée",                                           author: "Anne Teresa De Keersmaeker", url: "https://www.rosas.be",                                 credit: "Marc Domage", credit_in_photo: true },
+  { id: "papadopoulos",   image: "media/mycelium.webp",             quote: "Mycelium",                                                       author: "Christos Papadopoulos",      url: "https://christospapadopoulos.art",                     credit: "Agathe Poupeney" }
+] %>
+<% gallery = %w[forsythe kylian duo-fire jump duo-grey portrait-cutout studio critical-mass-lausanne beach-birds duo-blue stage-ball duo-wall] %>
+
+<section class="media-intro wrap">
+  <p class="stage-eyebrow"><%= t("stage.media.eyebrow") %></p>
+  <h1 class="stage-title"><%= t("navbar.media") %></h1>
+  <p class="media-intro__lead"><%= t("stage.media.intro") %></p>
+  <nav class="chip-nav" aria-label="<%= t("stage.media.scenes") %>">
+    <% scenes.each do |scene| %>
+      <a href="#<%= scene[:id] %>" class="chip"><%= scene[:author] %></a>
+    <% end %>
+    <a href="#gallery" class="chip chip--ghost"><%= t("stage.media.gallery") %></a>
+  </nav>
+</section>
+
+<% scenes.each_with_index do |scene, i| %>
+  <section class="scene <%= "scene--reverse" if i.odd? %> wrap" id="<%= scene[:id] %>">
+    <figure class="scene__figure">
+      <%= image_tag scene[:image], alt: "Albert Nikolli · #{scene[:author]}", loading: (i.zero? ? "eager" : "lazy") %>
+      <%# Some photos already carry the credit in the image itself %>
+      <figcaption class="<%= scene[:credit_in_photo] ? "visually-hidden" : "scene__credit" %>">© <%= scene[:credit] %></figcaption>
+    </figure>
+    <div class="scene__caption">
+      <blockquote><%= scene[:quote] %></blockquote>
+      <% if scene[:url] %>
+        <a href="<%= scene[:url] %>" target="_blank" rel="noopener"><%= scene[:author] %> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+      <% else %>
+        <span class="scene__author"><%= scene[:author] %></span>
+      <% end %>
     </div>
-    <div class="kylian" id="kylian">
-      <div class="text">
-        <p>“THE CHANGING OF A PERSON INTO A DANCER IS THE MOST BEAUTIFUL THING.”</p>
-        <a href="http://www.jirikylian.com/">
-          <h3>Jiří Kylián</h3>
-        </a>
-      </div>
-      <button class="copyright" title="©Blandine Soulage">C</button>
-    </div>
-    <%# <hr>  <!--Take off this comment in case you'd like to take off the 1px border --> %>
-    <div id="cunningham"class="cunningham">
-      <div class="text">
-        <p>“FALLING IS ONE OF THE WAYS OF MOVING“</p>
-        <a href="https://www.mercecunningham.org/about/merce-cunningham/">
-          <h3>Merce Cunningham</h3>
-        </a>
-      </div>
-      <button class="copyright" title="©Agathe Poupeney">C</button>
-    </div>
-    <div class="forsythe" id="forsythe">
-      <div class="text">
-        <p>“NO ONE HAS ANY IDEA WHAT REALLY WORKS”</p>
-        <a href="https://www.williamforsythe.com">
-          <h3>William Forsythe</h3>
-        </a>
-      </div>
-      <button class="copyright" title="©Agathe Poupeney">C</button>
-    </div>
-    <div class="maliphant" id="maliphant">
-      <div class="text">
-        <p>CRITICAL MASS</p>
-        <a href="https://www.russellmaliphantdancecompany.com/">
-          <h3>Russell Maliphant</h3>
-        </a>
-      </div>
-      <button class="copyright" title="©Blandine Soulage">C</button>
-    </div>
-    <div id="#t-g-d" class="video-background">
-      <iframe style="margin:auto" src="https://player.vimeo.com/video/1050511459?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp;quality=480p&amp;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="trimedGD"></iframe>
-    </div>
-    <div class="list">
-      <%= image_tag 'NNNN.webp' %>
-      <%= image_tag 'img9.png' %>
-      <%= image_tag 'img2c.png' %>
-      <%= image_tag 'img4.jpg' %>
-      <%= image_tag 'AM.JPG' %>
-      <%= image_tag 'img1.png' %>
-      <%= image_tag 'img5.jpg' %>
-      <%= image_tag 'CriticalMassLausanne.jpeg' %>
-      <%= image_tag 'BeachBirds.webp' %>
-      <%= image_tag 'img6.jpg' %>
-      <%= image_tag 'img3.PNG' %>
-      <%= image_tag 'img7.jpg' %>
-    </div>
+  </section>
+<% end %>
+
+<section class="media-video wrap">
+  <h2 class="group-title group-title--light"><%= t("stage.media.video") %></h2>
+  <div class="media-video__frame">
+    <iframe src="https://player.vimeo.com/video/1050511459?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;loop=1&amp;quality=720p"
+            allow="autoplay; fullscreen; picture-in-picture; encrypted-media" loading="lazy" title="Albert Nikolli on stage"></iframe>
   </div>
-</div>
+</section>
 
+<section class="gallery wrap" id="gallery" data-controller="lightbox">
+  <h2 class="group-title group-title--light"><%= t("stage.media.gallery") %></h2>
+  <ul class="gallery__grid">
+    <% gallery.each_with_index do |name, i| %>
+      <li>
+        <button type="button" class="gallery__item" data-action="lightbox#open" data-lightbox-index-param="<%= i %>" aria-label="<%= t("stage.media.open") %> <%= i + 1 %>">
+          <%= image_tag "media/#{name}.webp", alt: "Albert Nikolli on stage", loading: "lazy", data: { lightbox_target: "image" } %>
+        </button>
+      </li>
+    <% end %>
+  </ul>
 
-<%# <div style="width:300px;margin:0;margin:auto "> %>
-  <%# <audio controls style="opacity:0" id="hidden-audio"> %>
-    <%# <source src="<%= asset_path('EstasTonne.mp3')" type="audio/mpeg"> %>
-    <%# Your browser does not support the audio element. %>
-  <%# </audio> %>
-<%# </div> %>
-
-<script>
-  function scrollToNNNN(elementId) {
-    var element = document.getElementById(elementId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-
-  function scrollToCunningham(elementId) {
-    var element = document.getElementById(elementId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-
-  function scrollCriMas(elementId) {
-    var element = document.getElementById(elementId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-
-  function scrollKylian(elementId) {
-    var element = document.getElementById(elementId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-</script>
+  <dialog class="lightbox" data-lightbox-target="dialog" data-action="click->lightbox#backdrop keydown->lightbox#key">
+    <img data-lightbox-target="view" alt="">
+    <button type="button" class="lightbox__btn lightbox__btn--close" data-action="lightbox#close" aria-label="<%= t("stage.media.close") %>"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    <button type="button" class="lightbox__btn lightbox__btn--prev" data-action="lightbox#prev" aria-label="<%= t("stage.media.prev") %>"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+    <button type="button" class="lightbox__btn lightbox__btn--next" data-action="lightbox#next" aria-label="<%= t("stage.media.next") %>"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+  </dialog>
+</section>

@@ -1,17 +1,20 @@
-<%= form_with url: contact_path, method: :post, local: true do |f| %>
-  <div class="inp">
-    <%= f.text_field :name, required: true, placeholder: "Enter your name*" %>
+<%= form_with url: contact_path, method: :post, local: true, class: "contact-form" do |f| %>
+  <div class="field">
+    <%= f.label :name, t("home.fifth_section.form.name") %>
+    <%= f.text_field :name, required: true, autocomplete: "name", placeholder: t("home.fifth_section.form.name_placeholder") %>
   </div>
 
-  <div class="inp">
-    <%= f.email_field :email, required: true, placeholder: "Enter your email*" %>
+  <div class="field">
+    <%= f.label :email, t("home.fifth_section.form.email") %>
+    <%= f.email_field :email, required: true, autocomplete: "email", placeholder: t("home.fifth_section.form.email_placeholder") %>
   </div>
 
-  <div class="inp">
-    <%= f.text_area :message, required: true, placeholder: "Enter your message*" %>
+  <div class="field">
+    <%= f.label :message, t("home.fifth_section.form.message") %>
+    <%= f.text_area :message, required: true, rows: 5, placeholder: t("home.fifth_section.form.message_placeholder") %>
   </div>
 
-  <div class="inp-btn">
-    <%= f.submit "Send Message" %>
-  </div>
+  <button type="submit" class="btn-pill btn-pill--dark btn-pill--block">
+    <%= t("home.fifth_section.form.send") %> <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+  </button>
 <% end %>

@@ -1,50 +1,45 @@
 #backToTop {
   position: fixed;
-  bottom: 10px;
-  right: 20px;
-  z-index: 10000;
-  padding: 20px;
-  // background-color: rgba(235, 67, 1, 0.6);
-  color: #ffffff;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  right: clamp(1rem, 3vw, 1.75rem);
+  bottom: calc(clamp(1rem, 3vw, 1.75rem) + env(safe-area-inset-bottom, 0px));
+  z-index: 900;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(255, 255, 255, .18);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 20px;
+  background: rgba(10, 10, 10, .78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+  color: #fff;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
   opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity .3s ease, transform .3s ease, visibility .3s, background-color .2s ease;
 
-  span {
-    // color: rgba(255, 255, 255, 0.75);
-    color: #AC1302;
-
-    font-size: 2rem;
-    // border-bottom: 2px solid rgba(255, 255, 255, 0.75);
-    animation: scaleAnimation 1s infinite ease-in-out; // Add scaling animation
-    transform-origin: center; // Scale from the center
-    border-radius: 50%;
-
-    // &:hover {
-    //   color: #1f2c4e;
-    //   border-bottom: 2px solid #1f2c4e;
-    // }
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
   }
 
-  // Define scaling animation
-  @keyframes scaleAnimation {
-    0%, 100% {
-      transform: scale(1); // Default size
-    }
-    50% {
-      transform: scale(1.1); // Enlarged size
-      // color: #AC1302;
-      // border-bottom: 2px solid #AC1302;
-    }
+  &:hover {
+    background: $ink;
+    color: $champagne;
   }
+
+  &:focus-visible {
+    outline: 2px solid $champagne;
+    outline-offset: 3px;
+  }
+}
+
+body.nav-open #backToTop {
+  display: none;
 }
 
 .scrollTopElement {

@@ -4,33 +4,100 @@ fr:
     skills: "Compétences"
     portfolio: "Portfolio"
     contact: "CONTACTEZ-MOI"
+    menu: "Menu"
+    close: "Fermer le menu"
+    language: "Langue"
+    company: "A.N Arts & Software"
+    biography: "Biographie"
+    media: "Médias"
+    portfolio_link: "Portfolio"
 
   home:
+    hero:
+      cta_work: "Voir mes projets"
+      cta_contact: "Discutons"
+      role: "Fondateur d'A.N Arts & Software · Développeur Full-Stack"
     welcome: "Bienvenue"
     first_section:
       p_intro_1: "Cette page est dédiée à la présentation de mes réalisations professionnelles, au partage d’informations sur ma carrière artistique, mes projets en tant que développeur full stack, et à la présentation de mon portfolio."
       p_intro_2: "Tous les droits et images de cette page sont réservés. Toute utilisation ou duplication non autorisée de ce matériel sans l’autorisation expresse et écrite de l’auteur est strictement interdite."
     second_section:
       about: "À PROPOS DE MOI"
-      about_p: "Je m'appelle Albert Nikolli et je suis développeur full stack. J'ai une passion pour le codage et je suis toujours à la recherche de nouveaux défis. J'apprends rapidement et je cherche constamment des moyens d'améliorer mes compétences. J'ai de l'expérience avec HTML, CSS, JavaScript, Ruby on Rails et SQL. Je connais également Git, GitHub et Heroku. Je suis actuellement à la recherche de nouvelles opportunités pour travailler sur des projets passionnants et élargir mes connaissances."
+      about_p: "Je suis Albert Nikolli : danseur au Ballet de l'Opéra de Lyon, développeur full-stack et fondateur d'A.N Arts & Software."
+      about_p_2: "A.N Arts & Software est une société française basée à Lyon, qui conçoit des outils élégants et efficaces pour les maisons d'opéra, les compagnies de ballet et les artistes, ainsi que des sites web et des plateformes sur mesure pour les entreprises attachées au travail bien fait."
       design: "DESIGN"
       design_p: "Je peux concevoir le site en fonction de vos besoins et suggestions.<br>Je peux également créer le design à partir de zéro et vous conseiller pendant le travail."
       development: "DÉVELOPPEMENT"
       development_p: "Je peux développer le site selon vos besoins et spécifications, en veillant à ce qu’il réponde à toutes vos exigences, que ce soit à partir d’un design existant ou en partant de zéro."
       maintenance: "MAINTENANCE"
       maintenance_p: "Je propose des services de maintenance continue afin de garantir que votre site reste à jour, sécurisé et pleinement fonctionnel."
+    company:
+      tagline: "Des solutions logicielles avec une sensibilité pour la culture."
+      intro: "A.N Arts & Software crée des outils pour les organisations culturelles : institutions, compagnies et artistes qui ont besoin d'une technologie qui respecte leur esthétique et amplifie leur mission."
+      flagship: "Produit phare"
+      an_audition: "Une solution complète pour gérer les processus d'audition, de la réception des candidatures à la décision finale."
+      software_title: "Logiciel sur mesure"
+      software: "Des solutions logicielles conçues autour des besoins spécifiques de votre organisation."
+      web_title: "Web Design & Développement"
+      web: "Des expériences numériques qui respectent l'identité visuelle de votre marque et servent votre audience."
+      stats:
+        candidates: "Candidats traités"
+        sessions: "Sessions d'audition"
+        organisations: "Organisations"
+        setup: "Pour être opérationnel"
+      trusted: "Ils font confiance à AN AUDITION"
+      visit: "Visiter anartssoftware.com"
     third_section:
       skills: "COMPÉTENCES"
       using: "ACTUELLEMENT UTILISÉ"
       learning: "EN APPRENTISSAGE"
     forth_section:
+      projects: "Projets sélectionnés"
+      cultural: "Culturel"
+      other: "Autres secteurs"
+      tags:
+        an_audition: "AN AUDITION"
+        website: "Site web"
+        web_app: "Application web"
+        saas: "Plateforme SaaS"
+        rental: "Plateforme de location"
       many_more: "Et bien d'autres à venir !"
     fifth_section:
       contact: "CONTACT"
       contact_p: "N'hésitez pas à remplir ce formulaire avec un message et je vous contacterai dès que possible."
+      form:
+        name: "Nom"
+        email: "E-mail"
+        message: "Message"
+        name_placeholder: "Votre nom"
+        email_placeholder: "vous@exemple.com"
+        message_placeholder: "Parlez-moi de votre projet…"
+        send: "Envoyer le message"
+        direct: "Ou écrivez-moi directement"
 
   footer:
     back_to_top: "RETOUR EN HAUT"
+    rights: "Tous droits réservés."
+    founder: "Fondateur d'A.N Arts & Software"
+
+  stage:
+    biography:
+      eyebrow: "Biographie"
+      role: "Danseur · Ballet de l'Opéra de Lyon"
+      bridge_eyebrow: "Aujourd'hui"
+      bridge_text: "Tout ce que j'ai appris sur scène façonne aujourd'hui A.N Arts & Software : des outils pour les maisons d'opéra, les compagnies de ballet et les artistes."
+      cta_company: "Découvrir A.N Arts & Software"
+      cta_portfolio: "Voir mon portfolio"
+    media:
+      eyebrow: "Sur scène"
+      intro: "Des moments de scène, avec les chorégraphes qui ont marqué mon parcours."
+      scenes: "Scènes"
+      video: "En mouvement"
+      gallery: "Galerie"
+      open: "Ouvrir la photo"
+      close: "Fermer"
+      prev: "Précédente"
+      next: "Suivante"
 
   biography: |
     <div class="container pt-5">
@@ -59,8 +126,5 @@ fr:
       </p>
       <p>
         En <strong>2021</strong>, j’ai obtenu le <strong>Diplôme d’État</strong>, me permettant de partager ma passion par l’enseignement. J’ai enseigné au <strong>Conservatoire National Supérieur de Musique et de Danse (CNSMD) de Lyon</strong>, mettant en scène <em>Critical Mass</em> pour les remises de diplômes des étudiants.
-      </p>
-      <p>
-        De l’Albanie à la scène internationale, mon parcours a été fait de passion, de résilience et de croissance. La danse n’est pas seulement ma carrière — c’est la plus grande inspiration de ma vie.
       </p>
     </div>

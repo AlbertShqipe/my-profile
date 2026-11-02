@@ -1,10 +1,18 @@
 // Define variables for your color scheme
-
-// For example:
-$red: #FD1015;
+$red: #D92D20;
 $blue: #0D6EFD;
 $yellow: #FFC65A;
 $orange: #E67E22;
-$green: #1EDD88;
+$green: #12B76A;
 $gray: #0E0000;
 $light-gray: #F4F4F4;
+
+// Monochrome palette of the site
+$ink: #0a0a0a;          // black sections, primary text
+$ink-soft: #161616;     // cards on black
+$paper: #e5e5e5;        // the signature light grey
+$paper-soft: #efefed;   // alternate light section
+$surface: #fafaf9;      // cards on light
+$muted: #6b6b6b;
+$muted-dark: #8f8f8f;
+$champagne: #e0d8af;    // accent (was the hover colour)

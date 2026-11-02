@@ -4,33 +4,100 @@ sh:
     skills: "Aftësitë"
     portfolio: "Portofoli"
     contact: "KONTAKTO MUA"
+    menu: "Menu"
+    close: "Mbyll menunë"
+    language: "Gjuha"
+    company: "A.N Arts & Software"
+    biography: "Biografia"
+    media: "Media"
+    portfolio_link: "Portofoli"
 
   home:
+    hero:
+      cta_work: "Shiko punët e mia"
+      cta_contact: "Le të flasim"
+      role: "Themelues i A.N Arts & Software · Zhvillues Full-Stack"
     welcome: "Mirësevini"
     first_section:
       p_intro_1: "Kjo faqe është e dedikuar për të paraqitur arritjet e mia profesionale, për të ndarë informacione rreth karrierës sime artistike, projektet e mia si zhvillues full stack dhe për të shfaqur portofolin tim."
       p_intro_2: "Të gjitha të drejtat dhe imazhet në këtë faqe janë të rezervuara. Përdorimi ose kopjimi i paautorizuar i këtij materiali pa lejen e shprehur me shkrim nga autori është rreptësisht i ndaluar."
     second_section:
       about: "RRETH MEJE"
-      about_p: "Quhem Albert Nikolli dhe jam zhvillues full stack. Kam pasion programimin dhe gjithmonë kërkoj sfida të reja. Mësoj shpejt dhe gjithmonë kërkoj mënyra për të përmirësuar aftësitë e mia. Kam përvojë me HTML, CSS, JavaScript, Ruby on Rails dhe SQL. Gjithashtu, jam i njohur me Git, GitHub dhe Heroku. Aktualisht jam në kërkim të mundësive të reja për të punuar në projekte emocionuese dhe për të zgjeruar njohuritë e mia."
+      about_p: "Unë jam Albert Nikolli: balerin në Ballet de l'Opéra de Lyon, zhvillues full-stack dhe themelues i A.N Arts & Software."
+      about_p_2: "A.N Arts & Software është një kompani franceze softueri me seli në Lion, që krijon mjete elegante dhe efikase për teatrot e operës, trupat e baletit dhe artistët, si dhe faqe interneti dhe platforma të personalizuara për bizneset që e vlerësojnë punën e mirëbërë."
       design: "DISEJNIM"
       design_p: "Mund ta dizajnoj faqen sipas nevojave dhe sugjerimeve tuaja.<br>Mund ta krijoj gjithashtu nga fillimi dhe t’ju këshilloj gjatë procesit."
       development: "ZHVILLIM"
       development_p: "Mund ta zhvilloj faqen sipas nevojave dhe specifikimeve tuaja, duke u siguruar që plotëson të gjitha kërkesat – qoftë duke filluar nga një dizajn ekzistues apo nga fillimi."
       maintenance: "MIRËMBAJTJE"
       maintenance_p: "Ofroj shërbime të vazhdueshme mirëmbajtjeje për të siguruar që faqja juaj të mbetet e përditësuar, e sigurt dhe plotësisht funksionale."
+    company:
+      tagline: "Shërbime softueri me një ndjeshmëri për kulturën."
+      intro: "A.N Arts & Software krijon mjete për organizatat kulturore: institucione, trupa dhe artistë që kanë nevojë për një teknologji që respekton estetikën e tyre dhe fuqizon misionin e tyre."
+      flagship: "Produkti kryesor"
+      an_audition: "Një zgjidhje e plotë dixhitale për menaxhimin e audicioneve, nga pranimi i kandidaturave deri te vendimi përfundimtar."
+      software_title: "Softuer i personalizuar"
+      software: "Softuer i ndërtuar rreth proceseve dhe nevojave specifike të organizatës suaj."
+      web_title: "Web Design & Zhvillim"
+      web: "Faqe interneti dhe përvoja dixhitale që nderojnë identitetin vizual dhe misionin e markës suaj."
+      stats:
+        candidates: "Kandidatë të përpunuar"
+        sessions: "Sesione audicioni"
+        organisations: "Organizata"
+        setup: "Për t'u vënë në punë"
+      trusted: "I besojnë AN AUDITION"
+      visit: "Vizitoni anartssoftware.com"
     third_section:
       skills: "AFTËSITË"
       using: "DUKE PËRDORUR TANI"
       learning: "DUKE MËSUAR"
     forth_section:
+      projects: "Projekte të zgjedhura"
+      cultural: "Kulturë"
+      other: "Sektorë të tjerë"
+      tags:
+        an_audition: "AN AUDITION"
+        website: "Faqe interneti"
+        web_app: "Aplikacion web"
+        saas: "Platformë SaaS"
+        rental: "Platformë qiraje"
       many_more: "Dhe shumë të tjera që do të vijnë!"
     fifth_section:
       contact: "KONTAKTI"
       contact_p: "Mos hezitoni të plotësoni këtë formular me një mesazh dhe unë do t’ju kontaktoj sa më shpejt të jetë e mundur."
+      form:
+        name: "Emri"
+        email: "Email"
+        message: "Mesazhi"
+        name_placeholder: "Emri juaj"
+        email_placeholder: "ju@shembull.com"
+        message_placeholder: "Më tregoni për projektin tuaj…"
+        send: "Dërgo mesazhin"
+        direct: "Ose më shkruani direkt"
 
   footer:
     back_to_top: "KTHEHU NË KRYE"
+    rights: "Të gjitha të drejtat të rezervuara."
+    founder: "Themelues i A.N Arts & Software"
+
+  stage:
+    biography:
+      eyebrow: "Biografia"
+      role: "Balerin · Ballet de l'Opéra de Lyon"
+      bridge_eyebrow: "Sot"
+      bridge_text: "Gjithçka që mësova në skenë sot i jep formë A.N Arts & Software: mjete për teatrot e operës, trupat e baletit dhe artistët."
+      cta_company: "Zbuloni A.N Arts & Software"
+      cta_portfolio: "Shikoni portofolin tim"
+    media:
+      eyebrow: "Në skenë"
+      intro: "Momente nga skena, me koreografët që shënuan rrugëtimin tim."
+      scenes: "Skena"
+      video: "Në lëvizje"
+      gallery: "Galeria"
+      open: "Hap foton"
+      close: "Mbyll"
+      prev: "Mëparshmja"
+      next: "Tjetra"
 
   biography: |
     <div class="container pt-5">
@@ -59,8 +126,5 @@ sh:
       </p>
       <p>
         Në <strong>2021</strong>, fitova <strong>Diplôme d’État</strong>, që më mundëson të ndaj pasionin tim përmes mësimdhënies. Kam dhënë mësim në <strong>Conservatoire National Supérieur de Musique et de Danse (CNSMD) në Lion</strong>, duke vënë në skenë <em>Critical Mass</em> për ceremonitë e diplomimit të studentëve.
-      </p>
-      <p>
-        Nga Shqipëria në skenën ndërkombëtare, rrugëtimi im ka qenë një histori pasioni, qëndrueshmërie dhe rritjeje. Kërcimi nuk është vetëm karriera ime, është frymëzimi më i madh i jetës sime.
       </p>
     </div>
