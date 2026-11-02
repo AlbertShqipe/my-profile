@@ -512,60 +512,39 @@ body.nav-open {
     }
   }
 
+  // The black side carries the A.N logo intro
   &__media {
     grid-area: 1 / 1;
-    display: flex;
-    justify-content: flex-end;
+    position: relative;
     pointer-events: none;
 
-    // Soft fade so the photo melts into the black ground
-    &::after {
-      content: "";
+    .intro-logo {
       position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(10, 10, 10, .55) 0, transparent 22%, transparent 75%, rgba(10, 10, 10, .6) 100%);
+      top: 50%;
+      left: 77%;
+      width: min(25vw, 48vh);
+      transform: translate(-50%, -50%);
     }
-  }
-
-  &__photo {
-    width: 66%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 45% center;
-  }
-
-  &__video {
-    display: none;
   }
 
   @media (max-width: $bp-nav) {
     min-height: 0;
 
-    // The logo intro is drawn on pure black
+    // Leaves room for the nav above and the panel's diagonal below
     &__media {
       grid-area: auto;
       order: -1;
-      position: relative;
-      justify-content: center;
+      display: grid;
+      place-items: center;
       height: 54svh;
       min-height: 340px;
-      padding-top: $nav-height;
-      background: #000;
+      padding: $nav-height 0 4.5rem;
 
-      &::after {
-        display: none;
+      .intro-logo {
+        position: static;
+        width: min(70vw, 40svh);
+        transform: none;
       }
-    }
-
-    &__photo {
-      display: none;
-    }
-
-    &__video {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
     }
 
     &__panel {
@@ -577,6 +556,75 @@ body.nav-open {
       clip-path: polygon(0 3.5rem, 100% 0, 100% 100%, 0 100%);
     }
   }
+}
+
+// A.N logo intro (hero). Timings follow the original clip: the A and the N are
+// wiped in left to right, the line draws upward, then the name and the tagline rise in.
+.intro-logo {
+  display: block;
+  height: auto;
+  overflow: visible;
+
+  text {
+    fill: #fff;
+  }
+
+  &__a,
+  &__n {
+    font-family: $intro-serif;
+    font-size: 99px;
+    font-weight: 500;
+  }
+
+  &__line {
+    stroke: #fff;
+    stroke-width: 2.2;
+    stroke-dasharray: 1;
+  }
+
+  &__name text {
+    font-family: $intro-sans;
+    font-size: 21px;
+    font-weight: 500;
+  }
+
+  &__tagline {
+    font-family: $intro-serif;
+    font-size: 16.5px;
+    font-style: italic;
+  }
+
+  // Held back until the fonts are ready
+  &.is-pending {
+    .intro-logo__a,
+    .intro-logo__n { clip-path: inset(0 100% 0 0); }
+    .intro-logo__line { stroke-dashoffset: 1; }
+    .intro-logo__name,
+    .intro-logo__tagline { clip-path: inset(100% 0 0 0); }
+  }
+
+  &.is-playing {
+    .intro-logo__a { animation: intro-wipe-right .27s linear .03s both; }
+    .intro-logo__n { animation: intro-wipe-right .38s linear .22s both; }
+    .intro-logo__line { animation: intro-draw .4s ease-out .45s both; }
+    .intro-logo__name { animation: intro-rise .14s ease-out .62s both; }
+    .intro-logo__tagline { animation: intro-rise .14s ease-out .82s both; }
+  }
+}
+
+@keyframes intro-wipe-right {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes intro-draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes intro-rise {
+  from { clip-path: inset(100% 0 0 0); }
+  to { clip-path: inset(0 0 0 0); }
 }
 
 // The A|N mark, built from letters exactly as before

@@ -75,12 +75,7 @@
     </div>
 
     <div class="hero__media">
-      <%= image_tag "speach.png", alt: "Albert Nikolli", class: "hero__photo", fetchpriority: "high" %>
-      <%# Phones get the A|N logo intro instead of the photo %>
-      <%# The poster is the clip's final view, so it shows even when autoplay is blocked %>
-      <%= video_tag "video.mp4", class: "hero__video", muted: true, playsinline: true, preload: "none", poster: image_path("intro-poster.webp"),
-            "aria-label": "A.N · Albert Nikolli, Arts and Software",
-            data: { controller: "video", video_stop_at_value: 3, video_media_value: "(max-width: 900px)" } %>
+      <%= render "academic/intro_logo" %>
     </div>
   </section>
 

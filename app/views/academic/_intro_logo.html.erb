@@ -1,0 +1,25 @@
+<%# The A.N logo intro, rebuilt as SVG so it stays sharp at any size.
+    Coordinates come from the original 500x500 clip; the viewBox crops to the logo.
+    Animated by intro_controller.js + .intro-logo styles; without JS it is simply shown. %>
+<svg class="intro-logo" viewBox="88 112 320 250" role="img" aria-labelledby="intro-logo-title" data-controller="intro">
+  <title id="intro-logo-title">A.N · Albert Nikolli, Arts and Software</title>
+  <defs>
+    <%# Where the line crosses, the letters are cut back to leave a gap on each side %>
+    <mask id="intro-logo-cut" maskUnits="userSpaceOnUse" x="0" y="0" width="500" height="500">
+      <rect width="500" height="500" fill="#fff"/>
+      <line x1="200" y1="256" x2="322" y2="123" stroke="#000" stroke-width="30"/>
+    </mask>
+  </defs>
+
+  <g class="intro-logo__monogram" mask="url(#intro-logo-cut)">
+    <text class="intro-logo__a" x="200" y="197">A</text>
+    <text class="intro-logo__n" x="250" y="253">N</text>
+  </g>
+  <line class="intro-logo__line" x1="200" y1="256" x2="322" y2="123" pathLength="1"/>
+
+  <g class="intro-logo__name">
+    <text x="99" y="318" textLength="134" lengthAdjust="spacing">ALBERT</text>
+    <text x="258" y="318" textLength="139" lengthAdjust="spacing">NIKOLLI</text>
+  </g>
+  <text class="intro-logo__tagline" x="154" y="350" textLength="192" lengthAdjust="spacing">Arts and Software</text>
+</svg>
